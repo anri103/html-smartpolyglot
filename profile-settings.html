@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Profile-settings</title>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="startsite.studio">
+  <meta name="description" content="SmartPolyglot - Здесь легко выучить иностранный язык">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/dropzone/dist/dropzone.css" />
+  <link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/dist/flatpickr.css" />
+
+  <!-- Theme CSS -->
+  <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar-light fixed-top header-static bg-mode">
+
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo START -->
+        <a class="navbar-brand" href="#">
+          <img class="light-mode-item navbar-brand-item" src="assets/img/logo.svg" alt="logo">
+          <img class="dark-mode-item navbar-brand-item" src="assets/img/logo.svg" alt="logo">
+        </a>
+        <!-- Logo END -->
+
+        <!-- Responsive navbar toggler -->
+        <button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <!-- Main navbar START -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Nav Search START -->
+          <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+            <div class="nav-item w-100">
+              <form class="rounded position-relative">
+                <input class="form-control ps-5 bg-light" type="search" placeholder="Поиск..." aria-label="Search">
+                <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
+                  type="submit"><i class="bi bi-search fs-5"> </i></button>
+              </form>
+            </div>
+          </div>
+          <!-- Nav Search END -->
+
+          <ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+            <!-- Nav item 1 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+
+            <!-- Nav item 2 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Выпадающий список</a>
+              <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                <li><a class="dropdown-item" href="#">Пункт 1</a></li>
+                <li><a class="dropdown-item" href="#">Пункт 2</a></li>
+                <!-- Dropdown submenu -->
+                <li class="dropdown-submenu dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#">Пункт 3</a>
+                  <ul class="dropdown-menu" data-bs-popper="none">
+                    <li><a class="dropdown-item" href="#">Подпункт 1</a></li>
+                    <li><a class="dropdown-item" href="#">Подпункт 2</a></li>
+                    <li><a class="dropdown-item" href="#">Подпункт 3</a></li>
+                  </ul>
+                </li>
+
+                <!-- Dropdown submenu levels -->
+                <li class="dropdown-submenu dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#">Пункт 4</a>
+                  <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                    <li><a class="dropdown-item" href="#">Подпункт 1</a></li>
+                    <li><a class="dropdown-item" href="#">Подпункт 2</a></li>
+                    <!-- dropdown submenu open left -->
+                    <li class="dropdown-submenu dropstart">
+                      <a class="dropdown-item dropdown-toggle" href="#">Подпункт 3</a>
+                      <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                        <li><a class="dropdown-item" href="#">Подподпункт 1</a></li>
+                        <li><a class="dropdown-item" href="#">Подподпункт 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Подпункт 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Nav item 3 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Аккаунт</a>
+              <ul class="dropdown-menu" aria-labelledby="postMenu">
+                <li><a class="dropdown-item" href="#">Уведомления</a></li>
+                <li><a class="dropdown-item" href="#">Техподдержка</a></li>
+                <li><a class="dropdown-item" href="#">Детали вопроса</a></li>
+                <!-- dropdown submenu open left -->
+                <li class="dropdown-submenu dropstart">
+                  <a class="dropdown-item dropdown-toggle" href="#">Аккаунт</a>
+                  <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                    <li><a class="dropdown-item" href="#">Войти</a></li>
+                    <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                    <li><a class="dropdown-item" href="#">Восстановление пароля</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">404</a></li>
+                <li><a class="dropdown-item" href="#">Политика конфиденциальности</a></li>
+              </ul>
+            </li>
+
+            <!-- Nav item 4 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main navbar END -->
+
+        <!-- Nav right START -->
+        <ul class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
+
+          <li class="nav-item ms-2">
+            <a class="nav-link icon-md btn p-0" href="#">
+              <i class="bi bi-chat-left-text-fill fs-6"> </i>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link icon-md btn p-0" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              <span class="badge-notif animation-blink"></span>
+              <i class="bi bi-bell-fill fs-6"> </i>
+            </a>
+            <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
+              aria-labelledby="notifDropdown">
+              <div class="card">
+                <div class="card-header d-flex flex-wrap justify-content-between align-items-center">
+                  <p class="small m-md-0">Уведомления<span
+                      class="badge bg-danger bg-opacity-10 text-danger ms-2">4</span></p>
+                  <a class="small" href="#">Очистить все</a>
+                </div>
+                <div class="card-body p-0">
+                  <ul class="list-group list-group-flush list-unstyled p-2">
+                    <!-- Notif item -->
+                    <li>
+                      <div class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatar/01.jpg" alt="">
+                        </div>
+                        <div class="ms-sm-3">
+                          <div class=" d-flex">
+                            <p class="small mb-2"><b>Константин Пантелеймонович</b> отправил(а) вам запрос в друзья.</p>
+                            <p class="small ms-3 text-nowrap">Сейчас</p>
+                          </div>
+                          <div class="d-flex">
+                            <button class="btn btn-sm py-1 btn-primary me-2">Принять</button>
+                            <button class="btn btn-sm py-1 btn-danger-soft">Отмена</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <div
+                        class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatar/02.jpg" alt="">
+                        </div>
+                        <div class="ms-sm-3 d-flex">
+                          <div>
+                            <p class="small mb-2"><b>Апполинария Константиновна</b> празднует сегодня день рождения (Янв
+                              12)</p>
+                            <button class="btn btn-sm btn-outline-light py-1 me-2">Поздравить 🎂</button>
+                          </div>
+                          <p class="small ms-3">2мин</p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <a href="#" class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/img/logo/12.svg" alt="">
+                        </div>
+                        <div class="ms-sm-3 d-flex">
+                          <p class="small mb-2">Вы успешно прошли урок "Немецкий язык для начинающих".
+                            <b>Поздравляем!</b>
+                          </p>
+                          <p class="small ms-3">4часа</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-sm btn-primary-soft">Просмотреть всё</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Notification dropdown END -->
+
+          <li class="nav-item ms-2 dropdown">
+            <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside"
+              data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="avatar-img rounded-circle" src="assets/img/avatar/07.jpg" alt="">
+            </a>
+            <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
+              aria-labelledby="profileDropdown">
+              <!-- Profile info -->
+              <li class="px-3">
+                <div class="d-flex align-items-center position-relative">
+                  <!-- Avatar -->
+                  <div class="avatar me-3">
+                    <img class="avatar-img rounded-circle" src="assets/img/avatar/07.jpg" alt="avatar">
+                  </div>
+                  <div>
+                    <a class="h6 stretched-link" href="#">Пантелеймон Пантелеймонович</a>
+                  </div>
+                </div>
+                <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center" href="#">Мой
+                  профиль</a>
+              </li>
+              <!-- Links -->
+              <li><a class="dropdown-item" href="#" target="_blank"><i
+                    class="fa-fw bi bi-mortarboard-fill me-2"></i>Обучение</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank"><i
+                    class="fa-fw bi bi-people-fill me-2"></i>Друзья</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-gear-fill fa-fw me-2"></i>Настройки</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Выйти</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Profile START -->
+
+        </ul>
+        <!-- Nav right END -->
+      </div>
+    </nav>
+    <!-- Logo Nav END -->
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Container START -->
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Sidenav START -->
+        <div class="col-lg-3">
+
+          <div class="sidebar-widget">
+            <!-- Advanced filter responsive toggler START -->
+            <div class="d-flex align-items-center d-lg-none">
+              <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasSideNavbar" aria-controls="offcanvasSideNavbar">
+                <i class="btn btn-primary fw-bold fa-solid fa-sliders-h"></i>
+                <span class="h6 mb-0 fw-bold d-lg-none ms-2">Мой профиль</span>
+              </button>
+            </div>
+            <!-- Advanced filter responsive toggler END -->
+
+            <!-- Navbar START-->
+            <nav class="navbar navbar-expand-lg mx-0">
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSideNavbar">
+                <!-- Offcanvas header -->
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+
+                <!-- Offcanvas body -->
+                <div class="offcanvas-body d-block px-2 px-lg-0">
+                  <!-- Card START -->
+                  <div class="card overflow-hidden">
+                    <!-- Card body START -->
+                    <div class="card-body">
+                      <div class="text-center">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xxxl overflow-hidden rounded-circle mb-3">
+                          <img class="avatar-img" src="assets/img/avatar/07.jpg" alt="">
+                        </div>
+                        <!-- Info -->
+                        <h5 class="mb-0">
+                          <a href="#">Vladimir Mashukov</a>
+                        </h5>
+                        <small>UI/UX-дизайнер в Raw.BE</small>
+                      </div>
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <!-- Side Nav START -->
+                      <ul class="nav nav-link-secondary flex-column fw-bold gap-2">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/home-outline-filled.svg" alt=""><span>Аккаунт</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/calendar-outline-filled.svg" alt=""><span>Обучение</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/person-outline-filled.svg" alt=""><span>Друзья</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/chat-outline-filled.svg" alt=""><span>Чат</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/notification-outlined-filled.svg" alt=""><span>Уведомления</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/cog-outline-filled.svg" alt=""><span>Настройки</span></a>
+                        </li>
+                      </ul>
+                      <!-- Side Nav END -->
+                    </div>
+                    <!-- Card body END -->
+                    <!-- Card footer -->
+                    <!-- <div class="card-footer text-center py-2">
+                    <a class="btn btn-link text-secondary btn-sm" href="#">Редактировать</a>
+                  </div> -->
+                  </div>
+                  <!-- Card END -->
+                </div>
+              </div>
+            </nav>
+            <!-- Navbar END-->
+          </div>
+
+        </div>
+        <!-- Sidenav END -->
+
+        <!-- Main content START -->
+        <div class="col-md-8 col-lg-6 vstack gap-5">
+
+          <!-- Account settings START -->
+          <div class="card">
+
+            <!-- Title START -->
+            <div class="card-header border-0 pb-0">
+              <h1 class="h5 card-title">Настройки учетной записи</h1>
+              <p class="mb-0">Учитывая ключевые сценарии поведения, граница обучения кадров требует от нас анализа позиций, занимаемых участниками в отношении поставленных задач.</p>
+            </div>
+            <!-- Card header START -->
+            <!-- Card body START -->
+            <div class="card-body">
+              <!-- Form settings START -->
+              <form class="row g-3">
+                <!-- First name -->
+                <div class="col-sm-6 col-lg-4">
+                  <label class="form-label">Имя</label>
+                  <input type="text" class="form-control" placeholder="" value="Иван">
+                </div>
+                <!-- Last name -->
+                <div class="col-sm-6 col-lg-4">
+                  <label class="form-label">Фамилия</label>
+                  <input type="text" class="form-control" placeholder="" value="Иванов">
+                </div>
+                <!-- Additional name -->
+                <div class="col-sm-6 col-lg-4">
+                  <label class="form-label">Отчество</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <!-- User name -->
+                <div class="col-sm-6">
+                  <label class="form-label">Ник</label>
+                  <input type="text" class="form-control" placeholder="" value="username">
+                </div>
+                <!-- Birthday -->
+                <div class="col-lg-6">
+                  <label class="form-label">Дата рождения</label>
+                  <input type="text" class="form-control flatpickr" value="12/12/1990">
+                </div>
+                <!-- Allow checkbox -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="allowChecked" checked>
+                    <label class="form-check-label" for="allowChecked">
+                      Разрешить любому добавить вас в друзья
+                    </label>
+                  </div>
+                </div>
+                <!-- Phone number -->
+                <div class="col-sm-6">
+                  <label class="form-label">Телефон</label>
+                  <input type="text" class="form-control" placeholder="" value="+7 (916) 123-12-34">
+                  <!-- Add new number -->
+                  <a class="btn btn-sm btn-dashed rounded mt-2" href="#"> <i
+                      class="bi bi-plus-circle-dotted me-1"></i>Добавить телефон</a>
+                </div>
+                <!-- Phone number -->
+                <div class="col-sm-6">
+                  <label class="form-label">Email</label>
+                  <input type="text" class="form-control" placeholder="" value="ivan@mail.ru">
+                  <!-- Add new email -->
+                  <a class="btn btn-sm btn-dashed rounded mt-2" href="#"> <i
+                      class="bi bi-plus-circle-dotted me-1"></i>Добавить email</a>
+                </div>
+                <!-- Page information -->
+                <div class="col-12">
+                  <label class="form-label">О себе</label>
+                  <textarea class="form-control" rows="4"
+                    placeholder="Description (Required)">Картельные сговоры не допускают ситуации, при которой действия представителей оппозиции будут функционально разнесены на независимые элементы. А ещё сделанные на базе интернет-аналитики выводы, превозмогая сложившуюся непростую экономическую ситуацию, заблокированы в рамках своих собственных рациональных ограничений.</textarea>
+                  <small>Лимит символов: 300</small>
+                </div>
+                <!-- Button  -->
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                </div>
+              </form>
+              <!-- Settings END -->
+            </div>
+            <!-- Card body END -->
+          </div>
+          <!-- Account settings END -->
+
+          <!-- Change your password START -->
+          <div class="card">
+            <!-- Title START -->
+            <div class="card-header border-0 pb-0">
+              <h5 class="card-title">Смена пароля</h5>
+              <p class="mb-0">А ещё сделанные на базе интернет-аналитики выводы, превозмогая сложившуюся непростую экономическую ситуацию.</p>
+            </div>
+            <!-- Title START -->
+            <div class="card-body">
+              <!-- Settings START -->
+              <form class="row g-3">
+                <!-- Current password -->
+                <div class="col-12">
+                  <label class="form-label">Текущий пароль</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <!-- New password -->
+                <div class="col-12">
+                  <label class="form-label">Новый пароль</label>
+                  <!-- Input group -->
+                  <div class="input-group">
+                    <input class="form-control fakepassword" type="password" id="psw-input"
+                      placeholder="Новый пароль">
+                    <span class="input-group-text p-0">
+                      <i class="fakepasswordicon fa-solid fa-eye-slash cursor-pointer p-2 w-40px"></i>
+                    </span>
+                  </div>
+                  <!-- Pswmeter -->
+                  <div id="pswmeter" class="mt-2"></div>
+                  <div id="pswmeter-message" class="rounded mt-1"></div>
+                </div>
+                <!-- Confirm password -->
+                <div class="col-12">
+                  <label class="form-label">Подтвердить пароль</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <!-- Button  -->
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                </div>
+              </form>
+              <!-- Settings END -->
+            </div>
+          </div>
+          <!-- Card END -->
+
+          <!-- Notification START -->
+          <div class="card">
+            <!-- Card header START -->
+            <div class="card-header border-0 pb-0">
+              <h5 class="card-title">Уведомления</h5>
+              <p class="mb-0">Внезапно, некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом.</p>
+            </div>
+            <!-- Card header START -->
+            <!-- Card body START -->
+            <div class="card-body pb-0">
+              <!-- Notification START -->
+              <ul class="list-group list-group-flush">
+                <!-- Notification list item -->
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                  <div class="me-2">
+                    <h6 class="mb-0">Комментарии</h6>
+                    <p class="small mb-0">Комментарии в постах блога.</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="NotiSwitchCheckChecked"
+                      checked>
+                  </div>
+                </li>
+                <!-- Notification list item -->
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                  <div class="me-2">
+                    <h6 class="mb-0">Подписки</h6>
+                    <p class="small mb-0">А также непосредственные участники.</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="NotiSwitchCheckChecked3">
+                  </div>
+                </li>
+                <!-- Notification list item -->
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                  <div class="me-2">
+                    <h6 class="mb-0">Дни Рождения</h6>
+                    <p class="small mb-0">Высокое качество позиционных исследований.</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="NotiSwitchCheckChecked4">
+                  </div>
+                </li>
+                <!-- Notification list item -->
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                  <div class="me-2">
+                    <h6 class="mb-0">События</h6>
+                    <p class="small mb-0">Реализация намеченных плановых заданий.</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="NotiSwitchCheckChecked5"
+                      checked>
+                  </div>
+                </li>
+                <!-- Notification list item -->
+                <li class="list-group-item px-0 py-3">
+                  <!-- Accordion START -->
+                  <div class="accordion accordion-flush border-0" id="emailNotifications">
+                    <!-- Accordion item -->
+                    <div class="accordion-item bg-transparent">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <a href="#" class="accordion-button mb-0 p-0 collapsed bg-transparent shadow-none"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                          aria-controls="flush-collapseOne">
+                          <span>
+                            <span class="mb-0 h6 d-block">Email-уведомления</span>
+                            <small class="small mb-0 text-secondary">Повседневная практика.</small>
+                          </span>
+                        </a>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#emailNotifications">
+                        <div class="accordion-body p-0 pt-3">
+                          <!-- Notification list item -->
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="NotiSwitchCheckChecked6"
+                              checked>
+                            <label class="form-check-label" for="NotiSwitchCheckChecked6">
+                              Уведомления об уроках
+                            </label>
+                          </div>
+                          <!-- Notification list item -->
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="NotiSwitchCheckChecke7">
+                            <label class="form-check-label" for="NotiSwitchCheckChecke7">
+                              Уведомления о сообщениях
+                            </label>
+                          </div>
+                          <hr>
+                          <div class="mt-3">
+                            <h6>Частота уведомлений</h6>
+                            <!-- Notification list item -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="NotiRadio" id="NotiRadio1">
+                              <label class="form-check-label" for="NotiRadio1">
+                                День
+                              </label>
+                            </div>
+                            <!-- Notification list item -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="NotiRadio" id="NotiRadio2" checked>
+                              <label class="form-check-label" for="NotiRadio2">
+                                Неделя
+                              </label>
+                            </div>
+                            <!-- Notification list item -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="NotiRadio" id="NotiRadio3">
+                              <label class="form-check-label" for="NotiRadio3">
+                                Периодически
+                              </label>
+                            </div>
+                            <!-- Notification list item -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="NotiRadio" id="NotiRadio4" checked>
+                              <label class="form-check-label" for="NotiRadio4">
+                                Отключить
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Accordion END -->
+                </li>
+                <!-- Notification list item -->
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                  <div class="me-2">
+                    <h6 class="mb-0">Push-уведомления</h6>
+                    <p class="small mb-0">Качество позиционных исследований однозначно.</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="NotiSwitchCheckChecked8"
+                      checked>
+                  </div>
+                </li>
+                <!-- Notification list item -->
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                  <div class="me-2">
+                    <h6 class="mb-0">Еженедельная сводка аккаунта <span class="badge bg-primary smaller"> PRO-аккаунт</span>
+                    </h6>
+                    <p class="small mb-0">Высокотехнологичная концепция.</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="NotiSwitchCheckChecked9"
+                      disabled>
+                  </div>
+                </li>
+              </ul>
+              <!-- Notification END -->
+
+            </div>
+            <!-- Card body END -->
+            <!-- Button save -->
+            <div class="card-footer pt-0 text-end border-0">
+              <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+            </div>
+          </div>
+          <!-- Notification END -->
+
+          <!-- Privacy and safety START -->
+          <div class="card">
+            <!-- Card header START -->
+            <div class="card-header border-0 pb-0">
+              <h5 class="card-title">Конфиденциальность и безопасность</h5>
+              <p class="mb-0">Как принято считать, акционеры крупнейших компаний освещают чрезвычайно интересные особенности.</p>
+            </div>
+            <!-- Card header START -->
+            <!-- Card body START -->
+            <div class="card-body">
+              <!-- Privacy START -->
+              <ul class="list-group">
+
+                <!-- Privacy item -->
+                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                  <div class="me-md-3">
+                    <h6 class="mb-0">Использовать двухфакторную аутентификацию</h6>
+                    <p class="small mb-0">Реализация намеченных плановых заданий.</p>
+                  </div>
+                  <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i class="bi bi-pencil-square"></i>
+                    Изменить</button>
+                </li>
+
+                <!-- Privacy item -->
+                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                  <div class="me-md-3">
+                    <h6 class="mb-0">Вход в систему</h6>
+                    <p class="small mb-0">Разработка и распределение внутренних резервов</p>
+                  </div>
+                  <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0" data-bs-toggle="modal"
+                    data-bs-target="#modalLoginActivity"> <i class="bi bi-eye"></i> Просмотреть</button>
+                </li>
+
+                <!-- Privacy item -->
+                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                  <div class="me-md-3">
+                    <h6 class="mb-0">Управление своими данными и действиями</h6>
+                    <p class="small mb-0">Выберите язык для перевода</p>
+                  </div>
+                  <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i class="bi bi-pencil-square"></i>
+                    Изменить</button>
+                </li>
+
+                <!-- Privacy item -->
+                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                  <div class="me-md-3">
+                    <h6 class="mb-0">История поиска</h6>
+                    <p class="small mb-0">Чрезвычайно интересные особенности</p>
+                  </div>
+                  <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i class="bi bi-pencil-square"></i>
+                    Изменить</button>
+                </li>
+
+                <!-- Privacy item -->
+                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                  <div class="me-md-3">
+                    <h6 class="mb-0">Разрешенные услуги</h6>
+                    <p class="small mb-0">Инициированные исключительно синтетически</p>
+                  </div>
+                  <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i class="bi bi-pencil-square"></i>
+                    Изменить</button>
+                </li>
+              </ul>
+              <!-- Privacy END -->
+            </div>
+            <!-- Card body END -->
+            <!-- Button save -->
+            <div class="card-footer pt-0 text-end border-0">
+              <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+            </div>
+          </div>
+          <!-- Privacy and safety END -->
+
+          <!-- Communications START -->
+          <div class="card">
+            <!-- Title START -->
+            <div class="card-header border-0 pb-0">
+              <h5 class="card-title">Кто может связаться с вами?</h5>
+              <p class="mb-0">Внезапно, некоторые особенности внутренней политики освещают чрезвычайно интересные особенности.</p>
+            </div>
+            <!-- Title START -->
+            <!-- Card body START -->
+            <div class="card-body">
+              <!-- Accordion START -->
+              <div class="accordion" id="communications">
+                <!-- Accordion item -->
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="communicationOne">
+                    <button class="accordion-button mb-0 h6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#communicationcollapseOne" aria-expanded="true"
+                      aria-controls="communicationcollapseOne">
+                      Запрос на подключение
+                    </button>
+                  </h2>
+                  <!-- Accordion info -->
+                  <div id="communicationcollapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="communicationOne" data-bs-parent="#communications">
+                    <div class="accordion-body">
+                      <!-- Notification list item -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ComRadio" id="ComRadio5">
+                        <label class="form-check-label" for="ComRadio5">
+                          Все пользователи (рекомендуется)
+                        </label>
+                      </div>
+                      <!-- Notification list item -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ComRadio" id="ComRadio2" checked>
+                        <label class="form-check-label" for="ComRadio2">
+                          Только люди, которые знают ваш адрес электронной почты
+                        </label>
+                      </div>
+                      <!-- Notification list item -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ComRadio" id="ComRadio3">
+                        <label class="form-check-label" for="ComRadio3">
+                          Только люди, которые отображаются в вашем списке общих контактов
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion item -->
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="communicationTwo">
+                    <button class="accordion-button mb-0 h6 collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#communicationcollapseTwo" aria-expanded="false"
+                      aria-controls="communicationcollapseTwo">
+                      Кто может отправлять вам сообщения
+                    </button>
+                  </h2>
+                  <!-- Accordion info -->
+                  <div id="communicationcollapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="communicationTwo" data-bs-parent="#communications">
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <!-- Notification list item -->
+                        <li
+                          class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                          <div class="me-2">
+                            <p class="mb-0">Включить уведомления о запросах сообщений</p>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                              id="comSwitchCheckChecked">
+                          </div>
+                        </li>
+                        <!-- Notification list item -->
+                        <li
+                          class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                          <div class="me-2">
+                            <p class="mb-0">Разрешить пользователям добавлять вас в группы</p>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                              id="comSwitchCheckChecked2" checked>
+                          </div>
+                        </li>
+                        <!-- Notification list item -->
+                        <li
+                          class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                          <div class="me-2">
+                            <p class="mb-0">Разрешить рекламные сообщения</p>
+                            <p class="small">Ваша личная информация находится в безопасности, если вы не отвечаете на их рекламные сообщения.</p>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                              id="comSwitchCheckChecked3" checked>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion item -->
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="communicationThree">
+                    <button class="accordion-button mb-0 h6 collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#communicationcollapseThree" aria-expanded="false"
+                      aria-controls="communicationcollapseThree">
+                      Как люди могут найти вас
+                    </button>
+                  </h2>
+                  <!-- Accordion info -->
+                  <div id="communicationcollapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="communicationThree" data-bs-parent="#communications">
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <!-- Notification list item -->
+                        <li
+                          class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                          <div class="me-2">
+                            <p class="mb-0">Разрешить поисковым системам показывать ваш профиль?</p>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                              id="comSwitchCheckChecked4" checked>
+                          </div>
+                        </li>
+                        <!-- Notification list item -->
+                        <li
+                          class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                          <div class="me-2">
+                            <p class="mb-0">Разрешить людям искать по вашему адресу электронной почты? </p>
+                          </div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                              id="comSwitchCheckChecked5">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion END -->
+            </div>
+            <!-- Card body END -->
+            <!-- Button save -->
+            <div class="card-footer pt-0 text-end border-0">
+              <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+            </div>
+          </div>
+          <!-- Communications  END -->
+
+          <!-- Card START -->
+          <div class="card">
+            <!-- Card header START -->
+            <div class="card-header border-0 pb-0">
+              <h5 class="card-title">Удалить аккаунт</h5>
+              <p class="mb-0">Не следует, однако, забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу.</p>
+            </div>
+            <!-- Card header START -->
+            <!-- Card body START -->
+            <div class="card-body">
+              <!-- Delete START -->
+              <h6>Прежде чем Вы уйдёте...</h6>
+              <ul>
+                <li>Сделайте резервную копию ваших данных <a href="#">Здесь</a> </li>
+                <li>Если вы удалите свою учетную запись, вы потеряете все свои данные.</li>
+              </ul>
+              <div class="form-check form-check-md my-4">
+                <input class="form-check-input" type="checkbox" value="" id="deleteaccountCheck">
+                <label class="form-check-label" for="deleteaccountCheck">Да, я хочу удалить свой аккаунт</label>
+              </div>
+              <a href="#" class="btn btn-success-soft btn-sm mb-2 mb-sm-0">Сохранить аккаунт</a>
+              <a href="#" class="btn btn-danger btn-sm mb-0">Удалить аккаунт</a>
+              <!-- Delete END -->
+            </div>
+            <!-- Card body END -->
+          </div>
+          <!-- Card END -->
+
+        </div>
+
+      </div> <!-- Row END -->
+    </div>
+    <!-- Container END -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-mode py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <!-- Footer nav START -->
+          <ul class="nav justify-content-center justify-content-md-start lh-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Личный кабинет</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Чат</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Достижения</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Награды</a>
+            </li>
+          </ul>
+          <!-- Footer nav START -->
+        </div>
+        <div class="col-md-6">
+          <!-- Copyright START -->
+          <p class="text-center text-md-end mb-0">Все права защищены / Smartpolyglot © 2022</p>
+          <!-- Copyright END -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal login activity -->
+  <div class="modal fade" id="modalLoginActivity" tabindex="-1" aria-labelledby="modalLabelLoginActivity"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabelLoginActivity">Where You're Logged in </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <!-- location list item -->
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0 pb-3">
+              <div class="me-2">
+                <h6 class="mb-0">London, UK</h6>
+                <ul class="nav nav-divider small">
+                  <li class="nav-item">Active now </li>
+                  <li class="nav-item">This Apple iMac </li>
+                </ul>
+              </div>
+              <button class="btn btn-sm btn-primary-soft"> Logout </button>
+            </li>
+            <!-- location list item -->
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+              <div class="me-2">
+                <h6 class="mb-0">California, USA</h6>
+                <ul class="nav nav-divider small">
+                  <li class="nav-item">Active now </li>
+                  <li class="nav-item">This Apple iMac </li>
+                </ul>
+              </div>
+              <button class="btn btn-sm btn-primary-soft"> Logout </button>
+            </li>
+            <!-- location list item -->
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+              <div class="me-2">
+                <h6 class="mb-0">New york, USA</h6>
+                <ul class="nav nav-divider small">
+                  <li class="nav-item">Active now </li>
+                  <li class="nav-item">This Windows </li>
+                </ul>
+              </div>
+              <button class="btn btn-sm btn-primary-soft"> Logout </button>
+            </li>
+            <!-- location list item -->
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0 pt-3">
+              <div class="me-2">
+                <h6 class="mb-0">Mumbai, India</h6>
+                <ul class="nav nav-divider small">
+                  <li class="nav-item">Active now </li>
+                  <li class="nav-item">This Windows </li>
+                </ul>
+              </div>
+              <button class="btn btn-sm btn-primary-soft"> Logout </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vendors -->
+  <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
+  <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="assets/vendor/pswmeter/pswmeter.min.js"></script>
+
+  <!-- Template Functions -->
+  <script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
