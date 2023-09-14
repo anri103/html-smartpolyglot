@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Profile-study 2</title>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="startsite.studio">
+  <meta name="description" content="SmartPolyglot - Здесь легко выучить иностранный язык">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox-master/dist/css/glightbox.min.css">
+
+  <!-- Theme CSS -->
+  <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar-light fixed-top header-static bg-mode">
+
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo START -->
+        <a class="navbar-brand" href="#">
+          <img class="light-mode-item navbar-brand-item" src="assets/img/logo.svg" alt="logo">
+          <img class="dark-mode-item navbar-brand-item" src="assets/img/logo.svg" alt="logo">
+        </a>
+        <!-- Logo END -->
+
+        <!-- Responsive navbar toggler -->
+        <button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <!-- Main navbar START -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Nav Search START -->
+          <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+            <div class="nav-item w-100">
+              <form class="rounded position-relative">
+                <input class="form-control ps-5 bg-light" type="search" placeholder="Поиск..." aria-label="Search">
+                <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
+                  type="submit"><i class="bi bi-search fs-5"> </i></button>
+              </form>
+            </div>
+          </div>
+          <!-- Nav Search END -->
+
+          <ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+            <!-- Nav item 1 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+
+            <!-- Nav item 2 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Выпадающий список</a>
+              <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                <li><a class="dropdown-item" href="#">Пункт 1</a></li>
+                <li><a class="dropdown-item" href="#">Пункт 2</a></li>
+                <!-- Dropdown submenu -->
+                <li class="dropdown-submenu dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#">Пункт 3</a>
+                  <ul class="dropdown-menu" data-bs-popper="none">
+                    <li><a class="dropdown-item" href="#">Подпункт 1</a></li>
+                    <li><a class="dropdown-item" href="#">Подпункт 2</a></li>
+                    <li><a class="dropdown-item" href="#">Подпункт 3</a></li>
+                  </ul>
+                </li>
+
+                <!-- Dropdown submenu levels -->
+                <li class="dropdown-submenu dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#">Пункт 4</a>
+                  <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                    <li><a class="dropdown-item" href="#">Подпункт 1</a></li>
+                    <li><a class="dropdown-item" href="#">Подпункт 2</a></li>
+                    <!-- dropdown submenu open left -->
+                    <li class="dropdown-submenu dropstart">
+                      <a class="dropdown-item dropdown-toggle" href="#">Подпункт 3</a>
+                      <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                        <li><a class="dropdown-item" href="#">Подподпункт 1</a></li>
+                        <li><a class="dropdown-item" href="#">Подподпункт 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Подпункт 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Nav item 3 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Аккаунт</a>
+            </li>
+
+            <!-- Nav item 4 -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main navbar END -->
+
+        <!-- Nav right START -->
+        <ul class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
+
+          <li class="nav-item ms-2">
+            <a class="nav-link icon-md btn p-0" href="#">
+              <i class="bi bi-chat-left-text-fill fs-6"> </i>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link icon-md btn p-0" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              <span class="badge-notif animation-blink"></span>
+              <i class="bi bi-bell-fill fs-6"> </i>
+            </a>
+            <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
+              aria-labelledby="notifDropdown">
+              <div class="card">
+                <div class="card-header d-flex flex-wrap justify-content-between align-items-center">
+                  <p class="small m-md-0">Уведомления<span
+                      class="badge bg-danger bg-opacity-10 text-danger ms-2">4</span></p>
+                  <a class="small" href="#">Очистить все</a>
+                </div>
+                <div class="card-body p-0">
+                  <ul class="list-group list-group-flush list-unstyled p-2">
+                    <!-- Notif item -->
+                    <li>
+                      <div class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatar/01.jpg" alt="">
+                        </div>
+                        <div class="ms-sm-3">
+                          <div class=" d-flex">
+                            <p class="small mb-2"><b>Константин Пантелеймонович</b> отправил(а) вам запрос в друзья.</p>
+                            <p class="small ms-3 text-nowrap">Сейчас</p>
+                          </div>
+                          <div class="d-flex">
+                            <button class="btn btn-sm py-1 btn-primary me-2">Принять</button>
+                            <button class="btn btn-sm py-1 btn-danger-soft">Отмена</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <div
+                        class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/img/avatar/02.jpg" alt="">
+                        </div>
+                        <div class="ms-sm-3 d-flex">
+                          <div>
+                            <p class="small mb-2"><b>Апполинария Константиновна</b> празднует сегодня день рождения (Янв
+                              12)</p>
+                            <button class="btn btn-sm btn-outline-light py-1 me-2">Поздравить 🎂</button>
+                          </div>
+                          <p class="small ms-3">2мин</p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <a href="#" class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/img/logo/12.svg" alt="">
+                        </div>
+                        <div class="ms-sm-3 d-flex">
+                          <p class="small mb-2">Вы успешно прошли урок "Немецкий язык для начинающих".
+                            <b>Поздравляем!</b>
+                          </p>
+                          <p class="small ms-3">4часа</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-sm btn-primary-soft">Просмотреть всё</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Notification dropdown END -->
+
+          <li class="nav-item ms-2 dropdown">
+            <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside"
+              data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="avatar-img rounded-circle" src="assets/img/avatar/07.jpg" alt="">
+            </a>
+            <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
+              aria-labelledby="profileDropdown">
+              <!-- Profile info -->
+              <li class="px-3">
+                <div class="d-flex align-items-center position-relative">
+                  <!-- Avatar -->
+                  <div class="avatar me-3">
+                    <img class="avatar-img rounded-circle" src="assets/img/avatar/07.jpg" alt="avatar">
+                  </div>
+                  <div>
+                    <a class="h6 stretched-link" href="#">Пантелеймон Пантелеймонович</a>
+                  </div>
+                </div>
+                <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center" href="#">Мой профиль</a>
+              </li>
+              <!-- Links -->
+              <li><a class="dropdown-item" href="#" target="_blank"><i
+                    class="fa-fw bi bi-mortarboard-fill me-2"></i>Обучение</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank"><i
+                    class="fa-fw bi bi-people-fill me-2"></i>Друзья</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-gear-fill fa-fw me-2"></i>Настройки</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Выйти</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Profile START -->
+
+        </ul>
+        <!-- Nav right END -->
+      </div>
+    </nav>
+    <!-- Logo Nav END -->
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Container START -->
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Sidenav START -->
+        <div class="col-lg-3">
+
+          <div class="sidebar-widget">
+            <!-- Advanced filter responsive toggler START -->
+            <div class="d-flex align-items-center d-lg-none">
+              <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasSideNavbar" aria-controls="offcanvasSideNavbar">
+                <i class="btn btn-primary fw-bold fa-solid fa-sliders-h"></i>
+                <span class="h6 mb-0 fw-bold d-lg-none ms-2">Мой профиль</span>
+              </button>
+            </div>
+            <!-- Advanced filter responsive toggler END -->
+
+            <!-- Navbar START-->
+            <nav class="navbar navbar-expand-lg mx-0">
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSideNavbar">
+                <!-- Offcanvas header -->
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+
+                <!-- Offcanvas body -->
+                <div class="offcanvas-body d-block px-2 px-lg-0">
+                  <!-- Card START -->
+                  <div class="card overflow-hidden">
+                    <!-- Card body START -->
+                    <div class="card-body">
+                      <div class="text-center">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xxxl overflow-hidden rounded-circle mb-3">
+                          <img class="avatar-img" src="assets/img/avatar/07.jpg" alt="">
+                        </div>
+                        <!-- Info -->
+                        <h5 class="mb-0">
+                          <a href="#">Vladimir Mashukov</a>
+                        </h5>
+                        <small>UI/UX-дизайнер в Raw.BE</small>
+                      </div>
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <!-- Side Nav START -->
+                      <ul class="nav nav-link-secondary flex-column fw-bold gap-2">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/home-outline-filled.svg" alt=""><span>Аккаунт</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/calendar-outline-filled.svg" alt=""><span>Обучение</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/person-outline-filled.svg" alt=""><span>Друзья</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/chat-outline-filled.svg" alt=""><span>Чат</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/notification-outlined-filled.svg" alt=""><span>Уведомления</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="me-2 h-20px fa-fw"
+                              src="assets/img/icon/cog-outline-filled.svg" alt=""><span>Настройки</span></a>
+                        </li>
+                      </ul>
+                      <!-- Side Nav END -->
+                    </div>
+                    <!-- Card body END -->
+                    <!-- Card footer -->
+                    <!-- <div class="card-footer text-center py-2">
+                    <a class="btn btn-link text-secondary btn-sm" href="#">Редактировать</a>
+                  </div> -->
+                  </div>
+                  <!-- Card END -->
+                </div>
+              </div>
+            </nav>
+            <!-- Navbar END-->
+          </div>
+
+          <div class="sidebar-widget">
+            <div class="card overflow-hidden">
+              <div class="card-header">
+                <h1 class="h5">Немецкий язык</h1>
+                <h2 class="h6">Справочник по грамматике</h2>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-link-secondary flex-column fw-bold gap-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Немецкий язык</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Артикль</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Число имен существительных</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Склонение существительных</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Прилагательные</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Степени сравнения прилагательных</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Личные и притяжательные местоимения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Указательные местоимения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Вопросительные и возвратные местоимения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Неопределенные и отрицательные местоимения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Глагол</a>
+                    <ul class="subnav">
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Настоящее время</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Прошедшее время, Претериум</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Прошедшее время, Перфект и Плюсквамперфект</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Модальные глаголы</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Будущее время</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Особенности</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Страдательный залог</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Наклонения</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Числительные</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <div class="translate">
+              <div class="wrapper">
+                <div class="translator-block">
+                  <form action="/perevod/en-ru" method="post" class="form js-translation-form">
+                    <div class="form__languages">
+                      <div class="form__language">
+                        <i class="form__flag form__flag--en" data-lang="en" title="English"></i>
+                        <span>English</span>
+                      </div>
+                      <div class="form__language-arrow"></div>
+                      <div class="form__language">
+                        <i class="form__flag form__flag--ru" data-lang="ru" title="Русский"></i>
+                        <span>Русский</span>
+                      </div>
+                    </div>
+                    <div class="form__input-wrap">
+                      <input class="form__input" maxlength="30" name="text" placeholder="Фраза для перевода" type="text"
+                        value="">
+                      <div class="form__counter"><span class="form__count">0</span><span class="form__maxlength"> /
+                          30</span></div>
+                    </div>
+                    <button class="form__btn translate-button" name="button" type="submit">Перевести</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Sidenav END -->
+
+        <!-- Main content START -->
+        <div class="col-md-8 col-lg-6 vstack gap-5">
+
+          <!-- Эти стили уже есть в проекте -->
+          <style>
+            .slide {
+              position: relative;
+              background: #fff;
+              border-radius: 15px;
+              margin-bottom: 15px;
+              overflow: hidden;
+              padding: 45px;
+            }
+            .slide .favorite-button {
+              background: #fff;
+              border-radius: 50%;
+              box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+              cursor: pointer;
+              display: block;
+              height: 36px;
+              overflow: hidden;
+              position: absolute;
+              right: 30px;
+              top: 30px;
+              width: 36px;
+              border: none;
+              outline: none;
+              z-index: 1;
+            }
+            .slide .favorite-button:after {
+              background: url(assets/img/icon/favorite.svg) 50% no-repeat;
+              background-size: 20px 20px;
+              content: "";
+              display: block;
+              height: 100%;
+              width: 100%;
+            }
+          </style>
+          <div class="slide">
+            <button class="favorite-button"></button>
+            <h2>Грамматика</h2>
+            <p>Грамматика русского языка имеет свои особенности. В&nbsp;русском языке&nbsp;— 3&nbsp;временные формы. Здесь есть модальные глаголы, 3&nbsp;наклонения глагола, 2&nbsp;вида глагола. Числительные в&nbsp;русском языке&nbsp;— количественные, порядковые и&nbsp;собирательные. Падежная система состоит из&nbsp;6&nbsp;падежей. Для русского языка характерен прямой и&nbsp;обратный порядок слов в&nbsp;предложении, здесь нет строгости как в&nbsp;других языках.</p>
+
+            <!-- Все новые стили для блока -->
+            <style>
+              .grid-presentation {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 30px 0;
+              }
+              .presentation-item {
+                height: 100%;
+              }
+              .presentation-img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ededed;
+                border-radius: 8px;
+                transition: 0.3s ease;
+              }
+              @media (min-width: 992px) {
+                .grid-presentation {
+                  grid-template-columns: 1fr 1fr 1fr;
+                }
+                .presentation-img:hover {
+                  transform: scale(1.1);
+                }
+              }
+            </style>
+            <div class="grid-presentation">
+              <div class="presentation-item">
+                <a href="assets/img/course/image1.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image1.jpg" alt="">
+                </a>
+              </div>
+              <div class="presentation-item">
+                <a href="assets/img/course/image2.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image2.jpg" alt="">
+                </a>
+              </div>
+              <div class="presentation-item">
+                <a href="assets/img/course/image3.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image3.jpg" alt="">
+                </a>
+              </div>
+              <div class="presentation-item">
+                <a href="assets/img/course/image4.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image4.jpg" alt="">
+                </a>
+              </div>
+              <div class="presentation-item">
+                <a href="assets/img/course/image5.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image5.jpg" alt="">
+                </a>
+              </div>
+              <div class="presentation-item">
+                <a href="assets/img/course/image6.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image6.jpg" alt="">
+                </a>
+              </div>
+              <div class="presentation-item">
+                <a href="assets/img/course/image7.jpg" data-glightbox="slide-gallery">
+                  <img class="presentation-img" src="assets/img/course/image7.jpg" alt="">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <a class="btn btn-lg btn-primary" href="#">Выполнить задание</a>
+
+        </div>
+        <!-- Right sidebar END -->
+
+      </div> <!-- Row END -->
+    </div>
+    <!-- Container END -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-mode py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <!-- Footer nav START -->
+          <ul class="nav justify-content-center justify-content-md-start lh-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Личный кабинет</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Чат</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Достижения</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Награды</a>
+            </li>
+          </ul>
+          <!-- Footer nav START -->
+        </div>
+        <div class="col-md-6">
+          <!-- Copyright START -->
+          <p class="text-center text-md-end mb-0">Все права защищены / Smartpolyglot © 2022</p>
+          <!-- Copyright END -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vendors -->
+
+  <!-- Template Functions -->
+  <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
