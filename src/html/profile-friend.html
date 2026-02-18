@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Профиль друга"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": true,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <!-- profile-sidebar-widget-friend -->
+                    @@include('partials/components/profile-sidebar-widget-friend.html', {
+                        "myFriend": true
+                    })
+                </div>
+
+                <!-- Main content -->
+                <div class="col-md-8 col-lg-6 vstack gap-4">
+                    <!-- profile-info -->
+                    @@include('partials/components/profile-info.html', {
+                        "myProfile": false
+                    })
+                    <!-- profile-friends-list -->
+                    @@include('partials/components/profile-friends-list.html')
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

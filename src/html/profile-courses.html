@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Профиль: Учебник"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": true,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <!-- profile-sidebar-widget -->
+                    @@include('partials/components/profile-sidebar-widget.html', {
+                        "activeLink": "profile-courses"
+                    })
+                </div>
+
+                <!-- Main content -->
+                <div class="col-md-8 col-lg-6 vstack gap-4">
+
+                    <!-- Event alert -->
+                    <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+                        <strong>Скоро новый урок:</strong> изучение языков с носителем с 20 сентября 2022
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Card feed item -->
+                            @@include('partials/cards/course-card.html', {
+                                "title": "Русская грамматика для иностранцев"
+                            })
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Card feed item -->
+                            @@include('partials/cards/course-card.html', {
+                                "title": "Русский разговорник для туриста"
+                            })
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Card feed item -->
+                            @@include('partials/cards/course-card.html', {
+                                "title": "Дополнительные знания"
+                            })
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

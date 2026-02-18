@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Профиль"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": true,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <!-- profile-sidebar-widget -->
+                    @@include('partials/components/profile-sidebar-widget.html', {
+                        "activeLink": "profile-my"
+                    })
+                </div>
+
+                <!-- Main content -->
+                <div class="col-md-8 col-lg-6 vstack gap-4">
+                    <h1 class="py-0 my-0">Vladimir <span class="badge bg-primary fs-6 align-middle">администратор</span></h1>
+                    <!-- profile-info -->
+                    @@include('partials/components/profile-info.html', {
+                        "myProfile": true
+                    })
+                    <!-- profile-friends-list (only myFriend === true) -->
+                    @@include('partials/components/profile-friends-list.html')
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

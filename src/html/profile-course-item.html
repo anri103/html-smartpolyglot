@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Профиль: Курс"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": true,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <!-- profile-sidebar-widget -->
+                    @@include('partials/components/profile-sidebar-widget.html', {
+                        "activeLink": "profile-courses"
+                    })
+                    <!-- digest-sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <div class="card overflow-hidden">
+                            <div class="card-header">
+                                <h1 class="h5">Немецкий язык</h1>
+                                <h2 class="h6">Справочник по грамматике</h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="nav nav-link-secondary flex-column fw-bold gap-2">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Немецкий язык</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Артикль</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Число имен существительных</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Склонение существительных</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Прилагательные</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Степени сравнения прилагательных</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Личные и притяжательные местоимения</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Указательные местоимения</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Вопросительные и возвратные
+                                            местоимения</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Неопределенные и отрицательные
+                                            местоимения</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Глагол</a>
+                                        <ul class="subnav">
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Настоящее время</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Прошедшее время, Претериум</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Прошедшее время, Перфект и
+                                                    Плюсквамперфект</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Модальные глаголы</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Будущее время</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Особенности</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Страдательный залог</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Наклонения</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Числительные</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- translator-sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <div class="translate">
+                            <div class="wrapper">
+                                <div class="translator-block">
+                                    <form action="/perevod/en-ru" method="post" class="form js-translation-form">
+                                        <div class="form__languages">
+                                            <div class="form__language">
+                                                <i class="form__flag form__flag--en" data-lang="en" title="English"></i>
+                                                <span>English</span>
+                                            </div>
+                                            <div class="form__language-arrow"></div>
+                                            <div class="form__language">
+                                                <i class="form__flag form__flag--ru" data-lang="ru" title="Русский"></i>
+                                                <span>Русский</span>
+                                            </div>
+                                        </div>
+                                        <div class="form__input-wrap">
+                                            <input class="form__input" maxlength="30" name="text"
+                                                placeholder="Фраза для перевода" type="text" value="">
+                                            <div class="form__counter"><span class="form__count">0</span><span
+                                                    class="form__maxlength"> /
+                                                    30</span></div>
+                                        </div>
+                                        <button class="form__btn translate-button" name="button"
+                                            type="submit">Перевести</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main content -->
+                <div class="col-md-8 col-lg-6 vstack gap-5">
+
+                    <!-- Slide-1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic2" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im2" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic2" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <path class="opcty-11" fill="#D9D9D9"
+                                            d="M327.58 228.99C354.26 146.88 430.78 91.29 517.11 91.29L517.11 109.77 517.11 109.77C438.79 109.78 369.37 160.21 345.17 234.7z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-9" fill="#D9D9D9"
+                                            d="M399.98 451.79C330.13 401.04 300.91 311.09 327.58 228.99L345.17 234.7 345.17 234.7C320.97 309.19 347.48 390.79 410.84 436.83z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-7" fill="#D9D9D9"
+                                            d="M634.25 451.79C564.4 502.53 469.82 502.53 399.98 451.79L410.84 436.83 410.84 436.83C474.21 482.87 560.01 482.87 623.38 436.83z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-5" fill="#D9D9D9"
+                                            d="M706.64 228.98C733.32 311.09 704.09 401.04 634.25 451.79L623.38 436.83 623.38 436.83C686.74 390.79 713.26 309.19 689.05 234.7z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-3" fill="#D9D9D9"
+                                            d="M517.11 91.29C603.44 91.29 679.96 146.88 706.64 228.98L689.05 234.7 689.05 234.7C664.85 160.21 595.43 109.77 517.11 109.77z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-1" fill="#FFD966"
+                                            d="M394.89 290.57C394.89 224.05 449.61 170.14 517.11 170.14 584.61 170.14 639.33 224.05 639.33 290.57 639.33 357.08 584.61 411 517.11 411 449.61 411 394.89 357.08 394.89 290.57z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 421.851227, 197.2533)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="bold"
+                                                font-stretch="normal" font-size="15pt" fill="#000000" x="60.34175" y="111.9415"
+                                                style="display: inline;">
+                                                <tspan x="19.00484" y="88.68069">Существительное</tspan>
+                                                <tspan xml:space="preserve" x="171.5146" y="88.68069" textLength="3"
+                                                    font-size="9.75pt">
+                                                </tspan>
+                                                <tspan x="60.34175" y="111.9415" font-weight="normal" font-size="9pt">
+                                                    das Substantiv</tspan>
+                                                <tspan xml:space="preserve" x="130.1777" y="111.9415" font-weight="normal"
+                                                    font-size="9pt">
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-2" fill="#D9D9D9"
+                                            d="M436.08 101.85C436.08 57.05 472.36 20.73 517.11 20.73 561.87 20.73 598.15 57.05 598.15 101.85 598.15 146.65 561.87 182.96 517.11 182.96 472.36 182.96 436.08 146.65 436.08 101.85z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 456.4452, 41.12244)">
+                                            <text class="opcty-2" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="9.75pt" fill="#000000" x="5.603325"
+                                                y="71.67841" style="display: inline;">
+                                                <tspan x="12.96637" y="57.63841">Самостоятельная</tspan>
+                                                <tspan xml:space="preserve" x="108.3653" y="57.63841"> </tspan>
+                                                <tspan x="5.603325" y="71.67841">именная часть речи</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-4" fill="#D9D9D9"
+                                            d="M613.45 232.23C613.45 187.43 649.73 151.12 694.48 151.12 739.23 151.12 775.51 187.43 775.51 232.23 775.51 277.03 739.23 313.35 694.48 313.35 649.73 313.35 613.45 277.03 613.45 232.23z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 633.8139, 171.505035)">
+                                            <text class="opcty-4" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="9.75pt" fill="#000000" x="1.441948"
+                                                y="71.67841" style="display: inline;">
+                                                <tspan x="2.988823" y="57.63841" xml:space="preserve">отвечает на
+                                                    вопросы</tspan>
+                                                <tspan xml:space="preserve" x="118.3428" y="57.63841"> </tspan>
+                                                <tspan x="1.441948" y="71.67841" xml:space="preserve">wer? кто?</tspan>
+                                                <tspan xml:space="preserve" x="54.30669" y="71.67841"> </tspan>
+                                                <tspan x="63.30669" y="71.67841" xml:space="preserve">was? что?.</tspan>
+                                                <tspan xml:space="preserve" x="119.8897" y="71.67841"> </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-6" fill="#D9D9D9"
+                                            d="M561.68 430.38C561.68 385.58 597.96 349.27 642.71 349.27 687.47 349.27 723.75 385.58 723.75 430.38 723.75 475.18 687.47 511.5 642.71 511.5 597.96 511.5 561.68 475.18 561.68 430.38z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 582.046753, 369.653076)">
+                                            <text class="opcty-6" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="9.75pt" fill="#000000" x="8.916561"
+                                                y="71.67841" style="display: inline;">
+                                                <tspan x="2.719536" y="57.63841">изменятся по родам,</tspan>
+                                                <tspan xml:space="preserve" x="118.6121" y="57.63841"> </tspan>
+                                                <tspan x="8.916561" y="71.67841">числам и падежам</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-8" fill="#D9D9D9"
+                                            d="M309.36 426.9C309.36 382.1 345.64 345.78 390.39 345.78 435.15 345.78 471.43 382.1 471.43 426.9 471.43 471.69 435.15 508.01 390.39 508.01 345.64 508.01 309.36 471.69 309.36 426.9z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 329.628021, 366.069122)">
+                                            <text class="opcty-8" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="9pt" fill="#000000" x="11.84298" y="70.936"
+                                                style="display: inline;">
+                                                <tspan x="13.59884" y="57.97601">в предложении - в</tspan>
+                                                <tspan xml:space="preserve" x="107.9328" y="57.97601"> </tspan>
+                                                <tspan x="11.84298" y="70.936">роли подлежащего</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-10" fill="#D9D9D9"
+                                            d="M261.36 219.88C261.36 175.08 297.64 138.77 342.39 138.77 387.14 138.77 423.42 175.08 423.42 219.88 423.42 264.68 387.14 301 342.39 301 297.64 301 261.36 264.68 261.36 219.88z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 281.824341, 159.254486)">
+                                            <text class="opcty-10" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="9.75pt" fill="#000000"
+                                                x="14.42984" y="74.4884" style="display: inline;">
+                                                <tspan x="13.90641" y="60.44841">всегда пишется с</tspan>
+                                                <tspan xml:space="preserve" x="107.2253" y="60.44841"> </tspan>
+                                                <tspan x="14.42984" y="74.4884">заглавной буквы</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="matrix(-0, -1, 1, 0, 27.4993286, 488.5865)">
+                                            <text class="title-bottom-v" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552" style="display: inline;">
+                                                <tspan x="0" y="51.09312">Существительное</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Das Substantiv</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic3" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im3" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic3" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552" style="display: inline;">
+                                                <tspan x="0" y="51.09312">Множественное число</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Plural der Substantive
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-2" fill="#FFD966"
+                                            d="M76.64 207.17L370.29 207.17 370.29 276.5 76.64 276.5 76.64 207.17z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 83.54166, 214.068024)">
+                                            <text class="content-right-2" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="16.5pt" fill="#000000"
+                                                x="77.99237" y="48.35794" style="display: inline;">
+                                                <tspan x="93.73505" y="21.95794" xml:space="preserve">суффиксы</tspan>
+                                                <tspan xml:space="preserve" x="186.1091" y="21.95794"> </tspan>
+                                                <tspan x="77.99237" y="48.35794">e, -(e)n, -er, -s</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-3" fill="#FFD966"
+                                            d="M76.64 285.5L370.29 285.5 370.29 354.83 76.64 354.83 76.64 285.5z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 83.54166, 292.3999)">
+                                            <text class="content-right-3" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="16.5pt" fill="#000000"
+                                                x="107.4938" y="35.15794" style="display: inline;">
+                                                <tspan x="107.4938" y="35.15794">умлаут</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-4" fill="#FFD966"
+                                            d="M76.64 363.83L370.29 363.83 370.29 433.16 76.64 433.16 76.64 363.83z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 83.54166, 370.73172)">
+                                            <text class="content-right-4" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="16.5pt" fill="#000000"
+                                                x="102.7971" y="35.15794" style="display: inline;">
+                                                <tspan x="102.7971" y="35.15794">артикль</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-5" fill="#FFD966"
+                                            d="M76.64 442.16L370.29 442.16 370.29 511.5 76.64 511.5 76.64 442.16z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 83.54166, 449.063629)">
+                                            <text class="content-right-5" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="16.5pt" fill="#000000"
+                                                x="17.66035" y="35.15794" style="display: inline;">
+                                                <tspan x="17.66035" y="35.15794">сочетание разных средств</tspan>
+                                                <tspan xml:space="preserve" x="262.1838" y="35.15794"> </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-1" fill="#FFD966"
+                                            d="M76.64 164.16L855.58 164.16 855.58 198.83 76.64 198.83 76.64 164.16z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 83.5415649, 171.059921)">
+                                            <text class="content-right-1" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="18pt" fill="#000000"
+                                                x="270.2562" y="18.49699" style="display: inline;">
+                                                <tspan x="270.2562" y="18.49699">способы</tspan>
+                                                <tspan xml:space="preserve" x="357.0062" y="18.49699" textLength="5.375"
+                                                    font-weight="bold">
+                                                </tspan>
+                                                <tspan x="362.3812" y="18.49699" textLength="132.5">образования</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-6" fill="#D9D9D9"
+                                            d="M380.01 207.17L858.1 207.17 858.1 276.5 380.01 276.5 380.01 207.17z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 386.914429, 214.068024)">
+                                            <text class="content-right-6" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="96.17322" y="42.74194" style="display: inline;">
+                                                <tspan x="91.22009" y="23.54194">der Tisch – die Tische, die Frau – die
+                                                    Frauen</tspan>
+                                                <tspan x="96.17322" y="42.74194">das Kind – die Kinder, das Auto –die
+                                                    Autos</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-7" fill="#D9D9D9"
+                                            d="M380.01 285.5L858.1 285.5 858.1 354.83 380.01 354.83 380.01 285.5z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 386.914429, 292.3999)">
+                                            <text class="content-right-7" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="155.142" y="42.74194" style="display: inline;">
+                                                <tspan x="165.3529" y="23.54194">der Vater – die Väter</tspan>
+                                                <tspan x="155.142" y="42.74194">der Bruder – die Brüder</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-8" fill="#D9D9D9"
+                                            d="M380.01 363.83L858.1 363.83 858.1 433.16 380.01 433.16 380.01 363.83z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 386.914429, 370.73172)">
+                                            <text class="content-right-8" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="138.642" y="42.74194" style="display: inline;">
+                                                <tspan x="157.7279" y="23.54194">der Lehrer – die Lehrer</tspan>
+                                                <tspan x="138.642" y="42.74194">das Mädchen – die Mädchen</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-9" fill="#D9D9D9"
+                                            d="M380.01 442.16L858.1 442.16 858.1 511.5 380.01 511.5 380.01 442.16z"
+                                            style="display: inline;">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 386.914429, 449.063629)">
+                                            <text class="content-right-9" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="164.8295" y="42.74194" style="display: inline;">
+                                                <tspan x="160.7045" y="23.54194">das Buch – die Bücher</tspan>
+                                                <tspan x="164.8295" y="42.74194">der Sohn - die Söhne</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-3 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic4" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im4" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic4" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552" style="display: inline;">
+                                                <tspan x="0" y="51.09312">Множественное число</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Plural der Substantive
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-3" fill="#FFD966"
+                                            d="M437.47 329.73C437.47 288.95 470.06 255.89 510.27 255.89 550.48 255.89 583.07 288.95 583.07 329.73 583.07 370.51 550.48 403.56 510.27 403.56 470.06 403.56 437.47 370.51 437.47 329.73z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 470.611633, 283.1841)">
+                                            <text class="opcty-3" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="11.25pt" fill="#000000" x="6.223465"
+                                                y="51.68482" style="display: inline;">
+                                                <tspan x="6.223465" y="51.68482">суффикс</tspan>
+                                                <tspan x="59.34212" y="51.68482" textLength="13.75" font-weight="bold"
+                                                    font-size="12.75pt">-e
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-2" fill="#D9D9D9"
+                                            d="M395.16 325.87L406.02 325.87 406.02 315.2 416.06 315.2 416.06 325.87 426.92 325.87 426.92 335.91 416.06 335.91 416.06 346.57 406.02 346.57 406.02 335.91 395.16 335.91z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-4" fill="#D9D9D9"
+                                            d="M590.26 317.18L622.02 317.18 622.02 327.22 590.26 327.22zM590.26 332.24L622.02 332.24 622.02 342.28 590.26 342.28z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-1" fill="#D9D9D9"
+                                            d="M77.64 271.99L370.68 271.99 370.68 378.51 77.64 378.51z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 271.99L370.68 271.99 370.68 378.51 77.64 378.51z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 275.589966)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="41.89124"
+                                                y="62.76508" style="display: inline;">
+                                                <tspan x="41.7599" y="45.96508">небольшая группа односложных</tspan>
+                                                <tspan xml:space="preserve" x="236.8781" y="45.96508"> </tspan>
+                                                <tspan x="41.89124" y="62.76508">существительных женского рода</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#D9D9D9"
+                                            d="M77.64 384.62L370.68 384.62 370.68 491.14 77.64 491.14z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 384.62L370.68 384.62 370.68 491.14 77.64 491.14z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 388.2207)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="41.99329"
+                                                y="54.36508" style="display: inline;">
+                                                <tspan x="41.99329" y="54.36508">существительные среднего рода</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#D9D9D9"
+                                            d="M77.64 158.92L370.68 158.92 370.68 265.44 77.64 265.44z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 158.92L370.68 158.92 370.68 265.44 77.64 265.44z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 162.521179)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="62.49622"
+                                                y="71.16508" style="display: inline;">
+                                                <tspan x="8.180298" y="37.56508">существительные мужского рода. При
+                                                    этом,</tspan>
+                                                <tspan xml:space="preserve" x="272.1803" y="37.56508"> </tspan>
+                                                <tspan x="1.496216" y="54.36508">иногда, корневые гласные во
+                                                    множественном</tspan>
+                                                <tspan xml:space="preserve" x="278.8712" y="54.36508"> </tspan>
+                                                <tspan x="62.49622" y="71.16508">числе принимают умлаут.</tspan>
+                                                <tspan xml:space="preserve" x="216.1417" y="71.16508"> </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#D9D9D9"
+                                            d="M646.5 271.99L855.58 271.99 855.58 378.51 646.5 378.51z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M646.5 271.99L855.58 271.99 855.58 378.51 646.5 378.51z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 653.7, 275.589966)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="30.26133" y="64.63708"
+                                                style="display: inline;">
+                                                <tspan x="13.90195" y="45.43708">die Hand – die Hände, die</tspan>
+                                                <tspan xml:space="preserve" x="180.7769" y="45.43708"> </tspan>
+                                                <tspan x="30.26133" y="64.63708">Frucht – die Früchte.</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#D9D9D9"
+                                            d="M646.5 384.62L855.58 384.62 855.58 491.14 646.5 491.14z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M646.5 384.62L855.58 384.62 855.58 491.14 646.5 491.14z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 653.7, 388.2207)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="32.31992" y="64.63708"
+                                                style="display: inline;">
+                                                <tspan x="8.714455" y="45.43708">das Beispiel – die Beispiele,</tspan>
+                                                <tspan xml:space="preserve" x="185.9644" y="45.43708"> </tspan>
+                                                <tspan x="32.31992" y="64.63708">das Jahr – die Jahre.</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#D9D9D9"
+                                            d="M646.5 158.92L855.58 158.92 855.58 265.44 646.5 265.44z"
+                                            style="display: inline;"></path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M646.5 158.92L855.58 158.92 855.58 265.44 646.5 265.44z"
+                                            style="display: inline;"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 653.7, 162.521179)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="21.58945" y="83.83708"
+                                                style="display: inline;">
+                                                <tspan x="27.21445" y="26.23708">der Fluss – die Flüsse,</tspan>
+                                                <tspan xml:space="preserve" x="167.4644" y="26.23708"> </tspan>
+                                                <tspan x="35.46445" y="45.43708">der Ball – die Bälle,</tspan>
+                                                <tspan xml:space="preserve" x="159.2144" y="45.43708"> </tspan>
+                                                <tspan x="28.16758" y="64.63708">der Platz – die Plätze,</tspan>
+                                                <tspan xml:space="preserve" x="166.5113" y="64.63708"> </tspan>
+                                                <tspan x="21.58945" y="83.83708">der Baum – die Bäume.</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-4 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic5" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im5" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic5" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <path class="opcty-6" fill="#FFD966"
+                                            d="M79.14 466.22L858.1 466.22 858.1 497.73 79.14 497.73z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 86.34372, 469.8207)">
+                                            <text class="opcty-6" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="15pt" fill="#000000" x="218.5742" y="18.72">
+                                                <tspan x="218.5742" y="18.72">Данная группа не принимает умлаута!
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path fill="#4472C4"
+                                            d="M59.9 729.56C59.9 722.8 65.38 717.33 72.14 717.33L251.61 717.33 251.61 717.33C258.37 717.33 263.85 722.8 263.85 729.56 263.85 729.56 263.85 729.56 263.85 729.56L263.85 827.46 263.85 827.46C263.85 834.22 258.37 839.69 251.61 839.69L72.14 839.69C65.38 839.69 59.9 834.22 59.9 827.46z">
+                                        </path>
+                                        <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M59.9 729.56C59.9 722.8 65.38 717.33 72.14 717.33L251.61 717.33 251.61 717.33C258.37 717.33 263.85 722.8 263.85 729.56 263.85 729.56 263.85 729.56 263.85 729.56L263.85 827.46 263.85 827.46C263.85 834.22 258.37 839.69 251.61 839.69L72.14 839.69C65.38 839.69 59.9 834.22 59.9 827.46z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 68.2860947, 725.7099)">
+                                            <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#FFFFFF" x="2.136833" y="86.91875">
+                                                <tspan x="20.1798" y="28.35874">Все существительные</tspan>
+                                                <tspan xml:space="preserve" x="167.0001" y="28.35874"> </tspan>
+                                                <tspan x="14.3009" y="45.63874">мужского рода слабого</tspan>
+                                                <tspan xml:space="preserve" x="172.879" y="45.63874"> </tspan>
+                                                <tspan x="55.46496" y="62.91874">склонения:</tspan>
+                                                <tspan x="2.136833" y="86.91875">der Student – die Studenten</tspan>
+                                            </text>
+                                        </g>
+                                        <path fill="#B0BCDE"
+                                            d="M281.8 763.34L303.42 763.34 303.42 753.22 325.03 778.51 303.42 803.8 303.42 793.68 281.8 793.68z">
+                                        </path>
+                                        <path fill="#4472C4"
+                                            d="M345.43 729.56C345.43 722.8 350.91 717.33 357.67 717.33L537.14 717.33 537.14 717.33C543.9 717.33 549.38 722.8 549.38 729.56 549.38 729.56 549.38 729.56 549.38 729.56L549.38 827.46 549.38 827.46C549.38 834.22 543.9 839.69 537.14 839.69L357.67 839.69C350.91 839.69 345.43 834.22 345.43 827.46z">
+                                        </path>
+                                        <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M345.43 729.56C345.43 722.8 350.91 717.33 357.67 717.33L537.14 717.33 537.14 717.33C543.9 717.33 549.38 722.8 549.38 729.56 549.38 729.56 549.38 729.56 549.38 729.56L549.38 827.46 549.38 827.46C549.38 834.22 543.9 839.69 537.14 839.69L357.67 839.69C350.91 839.69 345.43 834.22 345.43 827.46z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 353.813354, 725.7099)">
+                                            <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#FFFFFF" x="32.76965" y="100.8387">
+                                                <tspan x="56.03918" y="14.43874">Некоторые</tspan>
+                                                <tspan xml:space="preserve" x="131.1407" y="14.43874"> </tspan>
+                                                <tspan x="33.7423" y="31.71874">существительные</tspan>
+                                                <tspan xml:space="preserve" x="153.4376" y="31.71874"> </tspan>
+                                                <tspan x="30.71105" y="48.99874">мужского рода, не</tspan>
+                                                <tspan xml:space="preserve" x="156.4689" y="48.99874"> </tspan>
+                                                <tspan x="18.89465" y="66.27875">относящиеся к группе</tspan>
+                                                <tspan xml:space="preserve" x="168.2853" y="66.27875"> </tspan>
+                                                <tspan x="14.1798" y="83.55875">слабого склонения: der</tspan>
+                                                <tspan xml:space="preserve" x="173.0001" y="83.55875"> </tspan>
+                                                <tspan x="32.76965" y="100.8387" xml:space="preserve">Staat</tspan>
+                                                <tspan xml:space="preserve" x="65.8009" y="100.8387"> </tspan>
+                                                <tspan x="73.0509" y="100.8387" xml:space="preserve">-
+                                                    die Staaten</tspan>
+                                            </text>
+                                        </g>
+                                        <path fill="#B0BCDE"
+                                            d="M567.32 763.34L588.94 763.34 588.94 753.22 610.56 778.51 588.94 803.8 588.94 793.68 567.32 793.68z">
+                                        </path>
+                                        <path fill="#4472C4"
+                                            d="M630.96 729.56C630.96 722.8 636.44 717.33 643.19 717.33L822.67 717.33 822.67 717.33C829.43 717.33 834.9 722.8 834.9 729.56 834.9 729.56 834.9 729.56 834.9 729.56L834.9 827.46 834.9 827.46C834.9 834.22 829.43 839.69 822.67 839.69L643.19 839.69C636.44 839.69 630.96 834.22 630.96 827.46z">
+                                        </path>
+                                        <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M630.96 729.56C630.96 722.8 636.44 717.33 643.19 717.33L822.67 717.33 822.67 717.33C829.43 717.33 834.9 722.8 834.9 729.56 834.9 729.56 834.9 729.56 834.9 729.56L834.9 827.46 834.9 827.46C834.9 834.22 829.43 839.69 822.67 839.69L643.19 839.69C636.44 839.69 630.96 834.22 630.96 827.46z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 639.340637, 725.7099)">
+                                            <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#FFFFFF" x="11.78918" y="83.55875">
+                                                <tspan x="0.1446457" y="31.71874">Существительные сильного</tspan>
+                                                <tspan xml:space="preserve" x="187.0353" y="31.71874"> </tspan>
+                                                <tspan x="55.58996" y="48.99874">склонения,</tspan>
+                                                <tspan xml:space="preserve" x="131.59" y="48.99874"> </tspan>
+                                                <tspan x="8.832146" y="66.27875">оканчивающиеся на -OR:</tspan>
+                                                <tspan xml:space="preserve" x="178.3478" y="66.27875"> </tspan>
+                                                <tspan x="11.78918" y="83.55875">der Motor – die Motoren</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="matrix(0, 1, -1, -0, 1612.19116, 146.330017)">
+                                            <path fill="#B0BCDE"
+                                                d="M711.31 864.09L732.93 864.09 732.93 853.97 754.55 879.26 732.93 904.55 732.93 894.43 711.31 894.43z">
+                                            </path>
+                                        </g>
+                                        <path fill="#4472C4"
+                                            d="M630.96 933.51C630.96 926.75 636.44 921.27 643.19 921.27L822.67 921.27 822.67 921.27C829.43 921.27 834.9 926.75 834.9 933.51 834.9 933.51 834.9 933.51 834.9 933.51L834.9 1031.41 834.9 1031.41C834.9 1038.16 829.43 1043.64 822.67 1043.64L643.19 1043.64 643.19 1043.64C636.44 1043.64 630.96 1038.16 630.96 1031.41z">
+                                        </path>
+                                        <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M630.96 933.51C630.96 926.75 636.44 921.27 643.19 921.27L822.67 921.27 822.67 921.27C829.43 921.27 834.9 926.75 834.9 933.51 834.9 933.51 834.9 933.51 834.9 933.51L834.9 1031.41 834.9 1031.41C834.9 1038.16 829.43 1043.64 822.67 1043.64L643.19 1043.64 643.19 1043.64C636.44 1043.64 630.96 1038.16 630.96 1031.41z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 639.340637, 929.658)">
+                                            <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#FFFFFF" x="58.63683" y="83.55875">
+                                                <tspan x="48.4259" y="31.71874">Большинство</tspan>
+                                                <tspan xml:space="preserve" x="138.754" y="31.71874"> </tspan>
+                                                <tspan x="0.7266769" y="48.99874">существительных женского</tspan>
+                                                <tspan xml:space="preserve" x="186.4532" y="48.99874"> </tspan>
+                                                <tspan x="16.89855" y="66.27875">рода: die Antwort – die</tspan>
+                                                <tspan xml:space="preserve" x="170.2814" y="66.27875"> </tspan>
+                                                <tspan x="58.63683" y="83.55875">Antworten</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="matrix(-1, -0, -0, -1, 1182.78137, 1964.91663)">
+                                            <path fill="#B0BCDE"
+                                                d="M569.77 967.28L591.39 967.28 591.39 957.17 613.01 982.46 591.39 1007.75 591.39 997.63 569.77 997.63z">
+                                            </path>
+                                        </g>
+                                        <path fill="#4472C4"
+                                            d="M345.43 933.51C345.43 926.75 350.91 921.27 357.67 921.27L537.14 921.27 537.14 921.27C543.9 921.27 549.38 926.75 549.38 933.51 549.38 933.51 549.38 933.51 549.38 933.51L549.38 1031.41 549.38 1031.41C549.38 1038.16 543.9 1043.64 537.14 1043.64L357.67 1043.64 357.67 1043.64C350.91 1043.64 345.43 1038.16 345.43 1031.41z">
+                                        </path>
+                                        <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M345.43 933.51C345.43 926.75 350.91 921.27 357.67 921.27L537.14 921.27 537.14 921.27C543.9 921.27 549.38 926.75 549.38 933.51 549.38 933.51 549.38 933.51 549.38 933.51L549.38 1031.41 549.38 1031.41C549.38 1038.16 543.9 1043.64 537.14 1043.64L357.67 1043.64 357.67 1043.64C350.91 1043.64 345.43 1038.16 345.43 1031.41z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 353.813354, 929.658)">
+                                            <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#FFFFFF" x="2.804802" y="74.91875">
+                                                <tspan x="56.03918" y="40.35874">Некоторые</tspan>
+                                                <tspan xml:space="preserve" x="131.1407" y="40.35874"> </tspan>
+                                                <tspan x="0.8790207" y="57.63874">существительные среднего</tspan>
+                                                <tspan xml:space="preserve" x="186.3009" y="57.63874"> </tspan>
+                                                <tspan x="2.804802" y="74.91875">рода: das Herz – die Herzen</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552">
+                                                <tspan x="0" y="51.09312">Множественное число</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Plural der Substantive
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-3" fill="#FFD966"
+                                            d="M500.67 299.59C500.67 258.82 533.26 225.76 573.47 225.76 613.68 225.76 646.27 258.82 646.27 299.59 646.27 340.37 613.68 373.43 573.47 373.43 533.26 373.43 500.67 340.37 500.67 299.59z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 533.814148, 253.050873)">
+                                            <text class="opcty-3" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="11.25pt" fill="#000000" x="1.660965"
+                                                y="51.68482">
+                                                <tspan x="1.660965" y="51.68482">суффикс</tspan>
+                                                <tspan x="54.77962" y="51.68482" textLength="22.875" font-weight="bold"
+                                                    font-size="12.75pt">
+                                                    -en
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-2" fill="#D9D9D9"
+                                            d="M453.75 295.73L464.61 295.73 464.61 285.07 474.65 285.07 474.65 295.73 485.51 295.73 485.51 305.77 474.65 305.77 474.65 316.44 464.61 316.44 464.61 305.77 453.75 305.77z">
+                                        </path>
+                                        <path class="opcty-4" fill="#D9D9D9"
+                                            d="M661.43 288.2L693.19 288.2 693.19 298.24 661.43 298.24zM661.43 303.26L693.19 303.26 693.19 313.3 661.43 313.3z">
+                                        </path>
+                                        <path class="opcty-1" fill="#CFD1D4"
+                                            d="M77.64 211.05L436.34 211.05 436.34 265.16 77.64 265.16z">
+                                        </path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 211.05L436.34 211.05 436.34 265.16 77.64 265.16z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 214.651642)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="48.8901"
+                                                y="36.56042">
+                                                <tspan x="29.29439" y="19.76042">некоторые существительные мужского
+                                                    рода, не</tspan>
+                                                <tspan xml:space="preserve" x="316.9194" y="19.76042"> </tspan>
+                                                <tspan x="48.8901" y="36.56042">относящиеся к группе слабого склонения
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="295.7651" y="36.56042"> </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#CFD1D4"
+                                            d="M77.64 274.04L436.34 274.04 436.34 328.16 77.64 328.16z">
+                                        </path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 274.04L436.34 274.04 436.34 328.16 77.64 328.16z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 277.644257)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="155.0839"
+                                                y="36.56042">
+                                                <tspan x="2.945267" y="19.76042">существительные сильного склонения,
+                                                    оканчивающиеся</tspan>
+                                                <tspan xml:space="preserve" x="342.1953" y="19.76042"> </tspan>
+                                                <tspan x="155.0839" y="36.56042">на</tspan>
+                                                <tspan xml:space="preserve" x="169.3339" y="36.56042"> </tspan>
+                                                <tspan x="172.4589" y="36.56042" textLength="16.75" font-weight="bold">
+                                                    -or</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#CFD1D4"
+                                            d="M77.64 148.42L436.34 148.42 436.34 202.53 77.64 202.53z">
+                                        </path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 148.42L436.34 148.42 436.34 202.53 77.64 202.53z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 152.021179)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="15.5815"
+                                                y="28.16042">
+                                                <tspan x="15.5815" y="28.16042">существительные мужского рода слабого
+                                                    склонения</tspan>
+                                                <tspan xml:space="preserve" x="330.3315" y="28.16042"> </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#CFD1D4"
+                                            d="M77.64 336.88L436.34 336.88 436.34 390.99 77.64 390.99z">
+                                        </path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 336.88L436.34 336.88 436.34 390.99 77.64 390.99z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 340.477264)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="41.04976"
+                                                y="28.16042">
+                                                <tspan x="41.04976" y="28.16042">некоторые существительные среднего рода
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#CFD1D4"
+                                            d="M77.64 399.13L436.34 399.13 436.34 453.24 77.64 453.24z">
+                                        </path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 399.13L436.34 399.13 436.34 453.24 77.64 453.24z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437653, 402.727264)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="33.59859"
+                                                y="28.16042">
+                                                <tspan x="33.59859" y="28.16042">большинство существительных женского
+                                                    рода</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#CFD1D4"
+                                            d="M711.75 213.3L858.1 213.3 858.1 267.41 711.75 267.41z">
+                                        </path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M711.75 213.3L858.1 213.3 858.1 267.41 711.75 267.41z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 718.949951, 216.901642)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="29.54453" y="38.43242">
+                                                <tspan x="30.58359" y="19.23242" xml:space="preserve">der Staat</tspan>
+                                                <tspan xml:space="preserve" x="89.23984" y="19.23242"> </tspan>
+                                                <tspan x="96.48984" y="19.23242" xml:space="preserve">-</tspan>
+                                                <tspan xml:space="preserve" x="101.3648" y="19.23242"> </tspan>
+                                                <tspan x="29.54453" y="38.43242">die Staat</tspan>
+                                                <tspan x="86.20078" y="38.43242" textLength="16.625" font-weight="bold">
+                                                    en</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#CFD1D4"
+                                            d="M711.75 276.29L858.1 276.29 858.1 330.41 711.75 330.41z">
+                                        </path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M711.75 276.29L858.1 276.29 858.1 330.41 711.75 330.41z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 718.949951, 279.894257)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="25.34531" y="38.43242">
+                                                <tspan x="26.61484" y="19.23242">der Motor –</tspan>
+                                                <tspan xml:space="preserve" x="105.3336" y="19.23242"> </tspan>
+                                                <tspan x="25.34531" y="38.43242">die Motor</tspan>
+                                                <tspan x="90.43906" y="38.43242" textLength="16.625" font-weight="bold">
+                                                    en</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#CFD1D4"
+                                            d="M711.75 150.67L858.1 150.67 858.1 204.78 711.75 204.78z">
+                                        </path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M711.75 150.67L858.1 150.67 858.1 204.78 711.75 204.78z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 718.949951, 154.271179)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="20.50937" y="38.43242">
+                                                <tspan x="21.79843" y="19.23242">der Student –</tspan>
+                                                <tspan xml:space="preserve" x="110.15" y="19.23242"> </tspan>
+                                                <tspan x="20.50937" y="38.43242">die Student</tspan>
+                                                <tspan x="95.23593" y="38.43242" textLength="16.625" font-weight="bold">
+                                                    en</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#CFD1D4"
+                                            d="M711.75 339.13L858.1 339.13 858.1 393.24 711.75 393.24z">
+                                        </path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M711.75 339.13L858.1 339.13 858.1 393.24 711.75 393.24z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 718.949951, 342.727264)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="31.1539" y="38.43242">
+                                                <tspan x="32.22421" y="19.23242">das Herz –</tspan>
+                                                <tspan xml:space="preserve" x="99.72421" y="19.23242"> </tspan>
+                                                <tspan x="31.1539" y="38.43242">die Herz</tspan>
+                                                <tspan x="84.7789" y="38.43242" textLength="16.625" font-weight="bold">
+                                                    en</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-5" fill="#CFD1D4"
+                                            d="M711.75 401.38L858.1 401.38 858.1 455.49 711.75 455.49z">
+                                        </path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M711.75 401.38L858.1 401.38 858.1 455.49 711.75 455.49z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 718.949951, 404.977264)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="19.20859" y="38.43242">
+                                                <tspan x="21.49765" y="19.23242">die Antwort –</tspan>
+                                                <tspan xml:space="preserve" x="110.4508" y="19.23242"> </tspan>
+                                                <tspan x="19.20859" y="38.43242">die Antwort</tspan>
+                                                <tspan x="96.53671" y="38.43242" textLength="16.625" font-weight="bold">
+                                                    en</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-5 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic6" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im6" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic6" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <g shape-rendering="crispEdges">
+                                            <g transform="matrix(1, 0, 0, 1, -799.0044, 474.290466)">
+                                                <rect x="0" y="0" width="360.8463" height="138.3021" fill="#4472C4">
+                                                </rect>
+                                                <rect x="360.8463" y="0" width="323.5174" height="138.3021" fill="#4472C4">
+                                                </rect>
+                                                <rect x="0" y="138.3021" width="95.87756" height="292.7376" fill="#F2F2F2">
+                                                </rect>
+                                                <rect x="95.87756" y="138.3021" width="264.9688" height="133.912"
+                                                    fill="#F2F2F2"></rect>
+                                                <rect x="360.8463" y="138.3021" width="323.5174" height="292.7376"
+                                                    fill="#F2F2F2"></rect>
+                                                <rect x="95.87756" y="272.2141" width="264.9688" height="158.8257"
+                                                    fill="#F2F2F2"></rect>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M0 0L0 138.3">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M0 138.3L0 272.21">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M0 272.21L0 431.04">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M95.88 138.3L95.88 272.21"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M95.88 272.21L95.88 431.04"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M360.85 0L360.85 138.3">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M360.85 138.3L360.85 272.21"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M360.85 272.21L360.85 431.04"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M684.36 0L684.36 138.3">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M684.36 138.3L684.36 272.21"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M684.36 272.21L684.36 431.04"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M0 0L95.88 0">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M95.88 0L360.85 0">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M360.85 0L684.36 0">
+                                                </path>
+                                                <path stroke-width="3" stroke="#FFFFFF" fill="none" d="M0 138.3L95.88 138.3">
+                                                </path>
+                                                <path stroke-width="3" stroke="#FFFFFF" fill="none"
+                                                    d="M95.88 138.3L360.85 138.3"></path>
+                                                <path stroke-width="3" stroke="#FFFFFF" fill="none"
+                                                    d="M360.85 138.3L684.36 138.3"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M95.88 272.21L360.85 272.21"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none" d="M0 431.04L95.88 431.04">
+                                                </path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M95.88 431.04L360.85 431.04"></path>
+                                                <path stroke-width="1" stroke="#FFFFFF" fill="none"
+                                                    d="M360.85 431.04L684.36 431.04"></path>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, -791.804443, 477.890442)">
+                                                <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                    font-stretch="normal" font-size="18pt" fill="#FFFFFF" x="140.4106"
+                                                    y="80.064">
+                                                    <tspan x="24.60596" y="22.464">С суффиксом -ER в немецком</tspan>
+                                                    <tspan xml:space="preserve" x="321.8403" y="22.464"> </tspan>
+                                                    <tspan x="7.762207" y="51.264">языке образуют множественное</tspan>
+                                                    <tspan xml:space="preserve" x="338.6841" y="51.264"> </tspan>
+                                                    <tspan x="140.4106" y="80.064">число:</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, -430.958069, 477.890442)">
+                                                <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                    font-stretch="normal" font-size="18pt" fill="#FFFFFF" x="37.56067"
+                                                    y="80.064">
+                                                    <tspan x="12.81651" y="22.464">С суффиксом -S в немецком</tspan>
+                                                    <tspan xml:space="preserve" x="296.3008" y="22.464"> </tspan>
+                                                    <tspan x="73.28331" y="51.264">языке образуют</tspan>
+                                                    <tspan xml:space="preserve" x="235.8341" y="51.264"> </tspan>
+                                                    <tspan x="37.56067" y="80.064">множественное число:</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(-0, -1, 1, 0, -791.804443, 901.7302)">
+                                                <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                    font-stretch="normal" font-size="12pt" fill="#000000" x="36.4485"
+                                                    y="53.376">
+                                                    <tspan x="12.02663" y="14.976">Образование множественного числа с
+                                                    </tspan>
+                                                    <tspan xml:space="preserve" x="274.0266" y="14.976"> </tspan>
+                                                    <tspan x="75.28053" y="34.176">помощью суффикса</tspan>
+                                                    <tspan xml:space="preserve" x="210.2571" y="34.176"> </tspan>
+                                                    <tspan x="36.4485" y="53.376">-ER сопровождается умлаутом!</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, -695.9269, 616.192566)">
+                                                <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                    font-stretch="normal" font-size="12pt" fill="#000000" x="56.67109"
+                                                    y="72.576">
+                                                    <tspan x="31.22968" y="14.976">Большинство односложных</tspan>
+                                                    <tspan xml:space="preserve" x="219.3391" y="14.976"> </tspan>
+                                                    <tspan x="12.73359" y="34.176">существительных среднего рода:
+                                                    </tspan>
+                                                    <tspan x="54.90937" y="53.376" xml:space="preserve"> Das Kind – die
+                                                        Kinder</tspan>
+                                                    <tspan x="56.67109" y="72.576">Das Dorf – die Dörfer</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, -430.958069, 616.192566)">
+                                                <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                    font-stretch="normal" font-size="12pt" fill="#000000" x="88.67589"
+                                                    y="168.576">
+                                                    <tspan x="16.85948" y="53.376">Суффикс принимают во множественном
+                                                    </tspan>
+                                                    <tspan xml:space="preserve" x="292.9845" y="53.376"> </tspan>
+                                                    <tspan x="21.54308" y="72.576">числе лишь немногие заимствованные
+                                                    </tspan>
+                                                    <tspan xml:space="preserve" x="287.6681" y="72.576"> </tspan>
+                                                    <tspan x="0.9688568" y="91.77599">существительные мужского и
+                                                        среднего рода:</tspan>
+                                                    <tspan x="88.92979" y="110.976">Der Chef – die Chefs</tspan>
+                                                    <tspan x="90.10167" y="130.176">Der Park – die Parks</tspan>
+                                                    <tspan x="86.96495" y="149.376">Das Auto – die Autos</tspan>
+                                                    <tspan x="88.67589" y="168.576">Das Café – das Cafes</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, -695.9269, 750.104553)">
+                                                <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                    font-stretch="normal" font-size="12pt" fill="#000000" x="52.15156"
+                                                    y="91.77599">
+                                                    <tspan x="1.081245" y="14.976">Небольшая группа существительных
+                                                    </tspan>
+                                                    <tspan xml:space="preserve" x="249.4875" y="14.976"> </tspan>
+                                                    <tspan x="72.34296" y="34.176">мужского рода:</tspan>
+                                                    <tspan xml:space="preserve" x="178.2258" y="34.176"> </tspan>
+                                                    <tspan x="47.47187" y="53.376">Der Mann – die Männer</tspan>
+                                                    <tspan x="52.34687" y="72.576">Der Rand – die Ränder</tspan>
+                                                    <tspan x="52.15156" y="91.77599">Der Wald – die Wälder</tspan>
+                                                </text>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552">
+                                                <tspan x="0" y="51.09312">Множественное число</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Plural der Substantive
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-4" fill="#FFD966"
+                                            d="M389.88 239.82C389.88 199.04 422.47 165.99 462.68 165.99 502.89 165.99 535.48 199.04 535.48 239.82 535.48 280.6 502.89 313.66 462.68 313.66 422.47 313.66 389.88 280.6 389.88 239.82z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 423.024384, 193.278687)">
+                                            <text class="content-right-4" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="0.2945099" y="51.38242">
+                                                <tspan x="0.2945099" y="51.38242">суффикс</tspan>
+                                                <tspan xml:space="preserve" x="56.77107" y="51.38242"> </tspan>
+                                                <tspan x="60.39607" y="51.38242" textLength="18.625" font-weight="bold">
+                                                    -er</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-3" fill="#D9D9D9"
+                                            d="M344.27 239.76L355.13 239.76 355.13 229.09 365.16 229.09 365.16 239.76 376.02 239.76 376.02 249.8 365.16 249.8 365.16 260.46 355.13 260.46 355.13 249.8 344.27 249.8z">
+                                        </path>
+                                        <path class="content-right-5" fill="#D9D9D9"
+                                            d="M551.09 232.23L582.85 232.23 582.85 242.27 551.09 242.27zM551.09 247.29L582.85 247.29 582.85 257.33 551.09 257.33z">
+                                        </path>
+                                        <path class="content-right-2" fill="#D9D9D9"
+                                            d="M68.81 248.3L328.66 248.3 328.66 339.87 68.81 339.87z"></path>
+                                        <path class="content-right-2" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M68.81 248.3L328.66 248.3 328.66 339.87 68.81 339.87z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 76.00551, 251.901642)">
+                                            <text class="content-right-2" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="10.81406" y="57.16057">
+                                                <tspan x="60.37265" y="37.96057">небольшая группа</tspan>
+                                                <tspan xml:space="preserve" x="185.0836" y="37.96057"> </tspan>
+                                                <tspan x="10.81406" y="57.16057">существительных мужского рода</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-8" fill="#D9D9D9"
+                                            d="M68.81 362.09L328.66 362.09 328.66 480.34 68.81 480.34z"></path>
+                                        <path class="content-right-8" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M68.81 362.09L328.66 362.09 328.66 480.34 68.81 480.34z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 76.00551, 365.6934)">
+                                            <text class="content-right-8" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="73.39999" y="80.09892">
+                                                <tspan x="30.77499" y="41.69891">немногие заимствованные</tspan>
+                                                <tspan xml:space="preserve" x="214.6812" y="41.69891"> </tspan>
+                                                <tspan x="22.4039" y="60.89892">существительные мужского и</tspan>
+                                                <tspan xml:space="preserve" x="223.0523" y="60.89892"> </tspan>
+                                                <tspan x="73.39999" y="80.09892">среднего рода</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-1" fill="#D9D9D9"
+                                            d="M68.81 150.67L328.66 150.67 328.66 242.24 68.81 242.24z"></path>
+                                        <path class="content-right-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M68.81 150.67L328.66 150.67 328.66 242.24 68.81 242.24z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 76.00551, 154.271179)">
+                                            <text class="content-right-1" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="12.30234" y="57.16057">
+                                                <tspan x="28.73593" y="37.96057">большинство односложных</tspan>
+                                                <tspan xml:space="preserve" x="216.7203" y="37.96057"> </tspan>
+                                                <tspan x="12.30234" y="57.16057">существительных среднего рода</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-7" fill="#D9D9D9"
+                                            d="M606.11 246.05L855.58 246.05 855.58 337.62 606.11 337.62z"></path>
+                                        <path class="content-right-7" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M606.11 246.05L855.58 246.05 855.58 337.62 606.11 337.62z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 613.311646, 249.651642)">
+                                            <text class="content-right-7" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="45.15081" y="66.76057">
+                                                <tspan x="40.47112" y="28.36057">der Mann – die Männer</tspan>
+                                                <tspan x="45.34612" y="47.56057">der Rand – die Ränder</tspan>
+                                                <tspan x="45.15081" y="66.76057">der Wald – die Wälder</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-12" fill="#D9D9D9"
+                                            d="M606.11 359.84L855.58 359.84 855.58 478.09 606.11 478.09z"></path>
+                                        <path class="content-right-12" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M606.11 359.84L855.58 359.84 855.58 478.09 606.11 478.09z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 613.311646, 363.4434)">
+                                            <text class="content-right-12" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="52.40081" y="89.69891">
+                                                <tspan x="52.65472" y="32.09892">der Chef – die Chefs</tspan>
+                                                <tspan x="53.82659" y="51.29892">der Park – die Parks</tspan>
+                                                <tspan x="50.68987" y="70.49892">das Auto – die Autos</tspan>
+                                                <tspan x="52.40081" y="89.69891">das Café – das Cafes</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-6" fill="#D9D9D9"
+                                            d="M606.11 148.42L855.58 148.42 855.58 239.99 606.11 239.99z"></path>
+                                        <path class="content-right-6" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M606.11 148.42L855.58 148.42 855.58 239.99 606.11 239.99z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 613.311646, 152.021179)">
+                                            <text class="content-right-6" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="49.67034" y="57.16057">
+                                                <tspan x="49.72112" y="37.96057">das Kind – die Kinder</tspan>
+                                                <tspan x="49.67034" y="57.16057">das Dorf – die Dörfer</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-10" fill="#FFD966"
+                                            d="M392.09 411.46C392.09 370.68 424.69 337.62 464.9 337.62 505.1 337.62 537.7 370.68 537.7 411.46 537.7 452.23 505.1 485.29 464.9 485.29 424.69 485.29 392.09 452.23 392.09 411.46z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 425.238739, 364.9119)">
+                                            <text class="content-right-10" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="3.98201" y="51.38242">
+                                                <tspan x="3.98201" y="51.38242">суффикс</tspan>
+                                                <tspan xml:space="preserve" x="60.45857" y="51.38242"> </tspan>
+                                                <tspan x="64.08357" y="51.38242" textLength="11.25" font-weight="bold">
+                                                    -s</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-9" fill="#D9D9D9"
+                                            d="M346.48 411.39L357.34 411.39 357.34 400.73 367.38 400.73 367.38 411.39 378.24 411.39 378.24 421.43 367.38 421.43 367.38 432.1 357.34 432.1 357.34 421.43 346.48 421.43z">
+                                        </path>
+                                        <path class="content-right-11" fill="#D9D9D9"
+                                            d="M553.3 403.86L585.06 403.86 585.06 413.9 553.3 413.9zM553.3 418.92L585.06 418.92 585.06 428.96 553.3 428.96z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-6 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic7" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im7" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic7" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <g transform="matrix(1, 0, 0, 1, 51.6935425, -100.77504)">
+                                            <text font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="24pt" fill="#000000" x="0" y="75.54433">
+                                                <tspan x="0" y="40.98432">Образование множественного числа
+                                                    существительных без</tspan>
+                                                <tspan xml:space="preserve" x="802.5" y="40.98432"> </tspan>
+                                                <tspan x="0" y="75.54433">суффикса</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552">
+                                                <tspan x="0" y="51.09312">Множественное число</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Plural der Substantive
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-6" fill="#D9D9D9"
+                                            d="M77.64 315.34L426.76 315.34 426.76 406.91 77.64 406.91z"></path>
+                                        <path class="content-left-6" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 315.34L426.76 315.34 426.76 406.91 77.64 406.91z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437042, 318.937317)">
+                                            <text class="content-left-6" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="116.432" y="66.76057">
+                                                <tspan x="5.631256" y="28.36057">существительные среднего рода с
+                                                    суффиксом</tspan>
+                                                <tspan xml:space="preserve" x="319.1313" y="28.36057"> </tspan>
+                                                <tspan x="322.7563" y="28.36057" textLength="8" font-weight="bold">–
+                                                </tspan>
+                                                <tspan x="40.65079" y="47.56057" font-weight="bold" xml:space="preserve">chen,
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="76.77579" y="47.56057" font-weight="bold">
+                                                </tspan>
+                                                <tspan x="84.02579" y="47.56057" font-weight="bold" xml:space="preserve">-lein,
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="117.4008" y="47.56057" textLength="3.625">
+                                                </tspan>
+                                                <tspan x="121.0258" y="47.56057" textLength="141.1641">а также с
+                                                    суффиксом</tspan>
+                                                <tspan xml:space="preserve" x="262.1898" y="47.56057" textLength="3.625">
+                                                </tspan>
+                                                <tspan x="265.8148" y="47.56057" textLength="16" font-weight="bold">–е
+                                                </tspan>
+                                                <tspan x="281.8148" y="47.56057" textLength="12.25" xml:space="preserve"> и
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="294.0648" y="47.56057" textLength="3.625">
+                                                </tspan>
+                                                <tspan x="116.432" y="66.76057">приставкой</tspan>
+                                                <tspan xml:space="preserve" x="194.3305" y="66.76057"> </tspan>
+                                                <tspan x="197.9555" y="66.76057" textLength="20.32813" font-weight="bold">ge-
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-2" fill="#D9D9D9"
+                                            d="M77.64 163.28L426.76 163.28 426.76 254.85 77.64 254.85z"></path>
+                                        <path class="content-left-2" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 163.28L426.76 163.28 426.76 254.85 77.64 254.85z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.8437042, 166.878021)">
+                                            <text class="content-left-2" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="59.68594" y="57.16057">
+                                                <tspan x="13.89297" y="37.96057">существительные мужского и среднего
+                                                    рода,</tspan>
+                                                <tspan xml:space="preserve" x="322.893" y="37.96057"> </tspan>
+                                                <tspan x="59.68594" y="57.16057">оканчивающиеся на</tspan>
+                                                <tspan xml:space="preserve" x="197.0766" y="57.16057"> </tspan>
+                                                <tspan x="200.7016" y="57.16057" textLength="74.32813" font-weight="bold">–er,
+                                                    -el, -en</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-9" fill="#D9D9D9"
+                                            d="M78.55 412.62L427.66 412.62 427.66 504.19 78.55 504.19z"></path>
+                                        <path class="content-left-9" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M78.55 412.62L427.66 412.62 427.66 504.19 78.55 504.19z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 85.74544, 416.2208)">
+                                            <text class="content-left-9" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="91.95157" y="57.16057">
+                                                <tspan x="40.21719" y="37.96057">два существительных женского рода:
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="296.0922" y="37.96057"> </tspan>
+                                                <tspan x="91.95157" y="57.16057" font-weight="bold">die Mutter, die
+                                                    Tochter</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="opcty-1" fill="#D9D9D9"
+                                            d="M77.64 124.54L858.04 124.54 858.04 157.22 77.64 157.22z">
+                                        </path>
+                                        <path class="opcty-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 124.54L858.04 124.54 858.04 157.22 77.64 157.22z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.84372, 128.1393)">
+                                            <text class="opcty-1" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="12pt" fill="#000000" x="197.3318" y="18.11442">
+                                                <tspan x="197.3318" y="18.11442">Множественное число существительных без
+                                                    суффикса</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-8" fill="#D9D9D9"
+                                            d="M508.03 315.34L857.14 315.34 857.14 406.91 508.03 406.91z"></path>
+                                        <path class="content-left-8" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M508.03 315.34L857.14 315.34 857.14 406.91 508.03 406.91z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 515.225769, 318.937317)">
+                                            <text class="content-left-8" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="137.9203" y="57.16057">
+                                                <tspan x="12.04532" y="37.96057">das Mädchen – die Mädchen das Gebäude –
+                                                    die</tspan>
+                                                <tspan xml:space="preserve" x="322.6703" y="37.96057"> </tspan>
+                                                <tspan x="137.9203" y="57.16057">Gebäude</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-4" fill="#D9D9D9"
+                                            d="M508.03 163.28L857.14 163.28 857.14 254.85 508.03 254.85z"></path>
+                                        <path class="content-left-4" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M508.03 163.28L857.14 163.28 857.14 254.85 508.03 254.85z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 515.225769, 166.878021)">
+                                            <text class="content-left-4" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="87.23282" y="57.16057">
+                                                <tspan x="92.94376" y="37.96057">der Lehrer – die Lehrer</tspan>
+                                                <tspan x="87.23282" y="57.16057">das Messer – die Messer</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-10" fill="#D9D9D9"
+                                            d="M508.93 412.62L858.04 412.62 858.04 504.19 508.93 504.19z"></path>
+                                        <path class="content-left-10" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M508.93 412.62L858.04 412.62 858.04 504.19 508.93 504.19z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 516.1275, 416.2208)">
+                                            <text class="content-left-10" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="87.47501" y="57.16057">
+                                                <tspan x="90.47501" y="37.96057">die Mutter – die Mütter</tspan>
+                                                <tspan x="87.47501" y="57.16057">die Tochter – die Töchter</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-3" fill="#FFD966"
+                                            d="M448.43 201.61L470.53 201.61 470.53 194.17 485.43 209.06 470.53 223.96 470.53 216.51 448.43 216.51z">
+                                        </path>
+                                        <path class="content-left-3" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M448.43 201.61L470.53 201.61 470.53 194.17 485.43 209.06 470.53 223.96 470.53 216.51 448.43 216.51z">
+                                        </path>
+                                        <path class="content-left-7" fill="#FFD966"
+                                            d="M447.93 353.67L470.03 353.67 470.03 346.22 484.93 361.12 470.03 376.02 470.03 368.57 447.93 368.57z">
+                                        </path>
+                                        <path class="content-left-7" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M447.93 353.67L470.03 353.67 470.03 346.22 484.93 361.12 470.03 376.02 470.03 368.57 447.93 368.57z">
+                                        </path>
+                                        <path class="content-left-9" fill="#FFD966"
+                                            d="M448.43 450.96L470.53 450.96 470.53 443.51 485.43 458.41 470.53 473.3 470.53 465.85 448.43 465.85z">
+                                        </path>
+                                        <path class="content-left-9" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M448.43 450.96L470.53 450.96 470.53 443.51 485.43 458.41 470.53 473.3 470.53 465.85 448.43 465.85z">
+                                        </path>
+                                        <path class="opcty-5" fill="#D9D9D9"
+                                            d="M77.64 258.94L858.04 258.94 858.04 310.89 77.64 310.89z">
+                                        </path>
+                                        <path class="opcty-5" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M77.64 258.94L858.04 258.94 858.04 310.89 77.64 310.89z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 84.84372, 262.54425)">
+                                            <text class="opcty-5" font-family="Calibri" font-style="normal" font-weight="normal"
+                                                font-stretch="normal" font-size="10.5pt" fill="#000000" x="100.4514"
+                                                y="35.47822">
+                                                <tspan x="91.41525" y="18.67822">Существительные мужского рода этой
+                                                    группы могут принимать
+                                                    умлаут во множественном числе!
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="676.9153" y="18.67822"> </tspan>
+                                                <tspan x="100.4514" y="35.47822">Существительные среднего рода умлаута
+                                                    не принимают!
+                                                    Исключение:
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="524.8264" y="35.47822"> </tspan>
+                                                <tspan x="527.9514" y="35.47822" textLength="139.0937" font-weight="bold">das
+                                                    Kloster – die
+                                                    Klöster
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="667.0452" y="35.47822" textLength="3.125"
+                                                    font-weight="bold">
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-7 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic8" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im8" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic8" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <g shape-rendering="crispEdges">
+                                            <g transform="matrix(1, 0, 0, 1, 75.82959, 133.125214)">
+                                                <rect class="opcty-1" x="0" y="0" width="129.9582" height="51.80488"
+                                                    fill="#FFD966"></rect>
+                                                <rect class="opcty-1" x="129.9582" y="0" width="519.8328" height="25.90244"
+                                                    fill="#FFD966">
+                                                </rect>
+                                                <rect class="opcty-1" x="649.791" y="0" width="129.9582" height="51.80488"
+                                                    fill="#FFD966">
+                                                </rect>
+                                                <rect class="opcty-1" x="129.9582" y="25.90244" width="129.9582"
+                                                    height="25.90244" fill="#FFD966"></rect>
+                                                <rect class="opcty-1" x="259.9164" y="25.90244" width="129.9582"
+                                                    height="25.90244" fill="#FFD966"></rect>
+                                                <rect class="opcty-1" x="389.8746" y="25.90244" width="129.9582"
+                                                    height="25.90244" fill="#FFD966"></rect>
+                                                <rect class="opcty-1" x="519.8328" y="25.90244" width="129.9582"
+                                                    height="25.90244" fill="#FFD966"></rect>
+                                                <rect class="opcty-1" x="0" y="51.80488" width="129.9582" height="77.12457"
+                                                    fill="#FFD966">
+                                                </rect>
+                                                <rect class="opcty-1" x="0" y="128.9294" width="129.9582" height="136.0496"
+                                                    fill="#FFD966">
+                                                </rect>
+                                                <rect class="opcty-1" x="0" y="264.9791" width="129.9582" height="103.61"
+                                                    fill="#FFD966"></rect>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 0L0 25.9"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 25.9L0 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 51.8L0 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 128.93L0 264.98">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 264.98L0 368.59">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 0L129.96 25.9">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 25.9L129.96 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 51.8L129.96 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 128.93L129.96 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 264.98L129.96 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 25.9L259.92 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 51.8L259.92 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 128.93L259.92 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 264.98L259.92 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 25.9L389.87 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 51.8L389.87 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 128.93L389.87 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 264.98L389.87 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 25.9L519.83 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 51.8L519.83 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 128.93L519.83 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 264.98L519.83 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 0L649.79 25.9">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 25.9L649.79 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 51.8L649.79 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 128.93L649.79 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 264.98L649.79 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M779.75 0L779.75 25.9">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M779.75 25.9L779.75 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M779.75 51.8L779.75 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M779.75 128.93L779.75 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M779.75 264.98L779.75 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 0L129.96 0"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 0L259.92 0">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 0L389.87 0">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 0L519.83 0">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 0L649.79 0">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 0L779.75 0">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 25.9L259.92 25.9"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 25.9L389.87 25.9"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 25.9L519.83 25.9"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 25.9L649.79 25.9"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 51.8L129.96 51.8">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 51.8L259.92 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 51.8L389.87 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 51.8L519.83 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 51.8L649.79 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 51.8L779.75 51.8"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 128.93L129.96 128.93">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 128.93L259.92 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 128.93L389.87 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 128.93L519.83 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 128.93L649.79 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 128.93L779.75 128.93"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 264.98L129.96 264.98">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 264.98L259.92 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 264.98L389.87 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 264.98L519.83 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 264.98L649.79 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 264.98L779.75 264.98"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M0 368.59L129.96 368.59">
+                                                </path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M129.96 368.59L259.92 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M259.92 368.59L389.87 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M389.87 368.59L519.83 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M519.83 368.59L649.79 368.59"></path>
+                                                <path class="opcty-1" stroke-width="1" stroke="#D9D9D9" fill="none"
+                                                    d="M649.79 368.59L779.75 368.59"></path>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 83.02959, 136.7252)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="46.82646" y="27.00644">
+                                                    <tspan x="46.82646" y="27.00644">Род</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 212.987778, 136.7252)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="222.461" y="14.05522">
+                                                    <tspan x="222.461" y="14.05522">Суффиксы</tspan>
+                                                    <tspan xml:space="preserve" x="282.9717" y="14.05522"> </tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 732.820557, 136.7252)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="17.89872" y="27.00644">
+                                                    <tspan x="17.89872" y="27.00644">без суффикса</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 212.987778, 162.627655)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="bold" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="52.15409" y="14.05522">
+                                                    <tspan x="52.15409" y="14.05522">-e</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 342.945984, 162.627655)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="bold" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="48.40409" y="14.05522">
+                                                    <tspan x="48.40409" y="14.05522">-en</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 472.904175, 162.627655)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="bold" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="49.65409" y="14.05522">
+                                                    <tspan x="49.65409" y="14.05522">-er</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 602.862366, 162.627655)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="bold" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="52.84159" y="14.05522">
+                                                    <tspan x="52.84159" y="14.05522">-s</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 83.02959, 188.53009)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="28.55546" y="48.06628">
+                                                    <tspan x="17.58574" y="31.26628">Мужской род</tspan>
+                                                    <tspan xml:space="preserve" x="97.97244" y="31.26628"> </tspan>
+                                                    <tspan x="28.55546" y="48.06628">Maskulina</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 212.987778, 188.53009)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="0.9490204" y="48.06628">
+                                                    <tspan x="18.22148" y="31.26628">большинство</tspan>
+                                                    <tspan xml:space="preserve" x="97.33671" y="31.26628"> </tspan>
+                                                    <tspan x="0.9490204" y="48.06628">(возможен умлаут)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 342.945984, 188.53009)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="31.61454" y="56.46629">
+                                                    <tspan x="16.09159" y="22.86628">не многие (не</tspan>
+                                                    <tspan xml:space="preserve" x="99.46658" y="22.86628"> </tspan>
+                                                    <tspan x="23.26787" y="39.66629">принимают</tspan>
+                                                    <tspan xml:space="preserve" x="92.29032" y="39.66629"> </tspan>
+                                                    <tspan x="31.61454" y="56.46629">умлаута)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 472.904175, 188.53009)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="34.98954" y="56.46629">
+                                                    <tspan x="25.5706" y="22.86628">некоторые</tspan>
+                                                    <tspan xml:space="preserve" x="89.98759" y="22.86628"> </tspan>
+                                                    <tspan x="21.14287" y="39.66629">(принимают</tspan>
+                                                    <tspan xml:space="preserve" x="94.41532" y="39.66629"> </tspan>
+                                                    <tspan x="34.98954" y="56.46629">умлаут)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 602.862366, 188.53009)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="40.8416" y="48.06628">
+                                                    <tspan x="7.779095" y="31.26628">заимствованные</tspan>
+                                                    <tspan xml:space="preserve" x="107.7791" y="31.26628"> </tspan>
+                                                    <tspan x="40.8416" y="48.06628">слова</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 732.820557, 188.53009)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="0.9490204" y="56.46629">
+                                                    <tspan x="6.131634" y="22.86628">оканчивающиеся</tspan>
+                                                    <tspan xml:space="preserve" x="109.4266" y="22.86628"> </tspan>
+                                                    <tspan x="17.06816" y="39.66629">на –er, -el, -en</tspan>
+                                                    <tspan xml:space="preserve" x="98.49002" y="39.66629"> </tspan>
+                                                    <tspan x="0.9490204" y="56.46629">(возможен умлаут)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 83.02959, 265.654663)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="31.63163" y="77.52881">
+                                                    <tspan x="18.51054" y="60.7288">Женский род</tspan>
+                                                    <tspan xml:space="preserve" x="97.04764" y="60.7288"> </tspan>
+                                                    <tspan x="31.63163" y="77.52881">Feminina</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 212.987778, 265.654663)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="34.98954" y="102.7288">
+                                                    <tspan x="3.085255" y="35.5288">небольшая группа</tspan>
+                                                    <tspan xml:space="preserve" x="112.4729" y="35.5288"> </tspan>
+                                                    <tspan x="16.47636" y="52.3288">односложных</tspan>
+                                                    <tspan xml:space="preserve" x="99.08183" y="52.3288"> </tspan>
+                                                    <tspan x="5.77177" y="69.1288">существительных</tspan>
+                                                    <tspan xml:space="preserve" x="109.7864" y="69.1288"> </tspan>
+                                                    <tspan x="21.14287" y="85.9288">(принимают</tspan>
+                                                    <tspan xml:space="preserve" x="94.41532" y="85.9288"> </tspan>
+                                                    <tspan x="34.98954" y="102.7288">умлаут)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 342.945984, 265.654663)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="31.61454" y="85.9288">
+                                                    <tspan x="7.283981" y="52.3288">большинство (не</tspan>
+                                                    <tspan xml:space="preserve" x="108.2742" y="52.3288"> </tspan>
+                                                    <tspan x="23.26787" y="69.12881">принимают</tspan>
+                                                    <tspan xml:space="preserve" x="92.29032" y="69.12881"> </tspan>
+                                                    <tspan x="31.61454" y="85.9288">умлаута)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 472.904175, 265.654663)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="54.09159" y="69.12881">
+                                                    <tspan x="54.09159" y="69.12881" xml:space="preserve"> -</tspan>
+                                                    <tspan xml:space="preserve" x="61.46659" y="69.12881"> </tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 602.862366, 265.654663)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="55.65409" y="69.12881">
+                                                    <tspan x="55.65409" y="69.12881">-</tspan>
+                                                    <tspan xml:space="preserve" x="59.90409" y="69.12881"> </tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 732.820557, 265.654663)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="36.4788" y="102.7288">
+                                                    <tspan x="32.77422" y="18.7288">только 2</tspan>
+                                                    <tspan xml:space="preserve" x="82.78398" y="18.7288"> </tspan>
+                                                    <tspan x="3.89677" y="35.5288">существительных:</tspan>
+                                                    <tspan x="11.91631" y="52.3288">die Mutter – die</tspan>
+                                                    <tspan xml:space="preserve" x="103.6419" y="52.3288"> </tspan>
+                                                    <tspan x="37.72881" y="69.1288">Mütter</tspan>
+                                                    <tspan x="10.6663" y="85.92881">die Tochter – die</tspan>
+                                                    <tspan xml:space="preserve" x="104.8919" y="85.92881"> </tspan>
+                                                    <tspan x="36.4788" y="102.7288">Töchter</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 83.02959, 401.704285)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="32.02909" y="61.30901">
+                                                    <tspan x="18.94462" y="44.509">Средний род</tspan>
+                                                    <tspan xml:space="preserve" x="96.61356" y="44.509"> </tspan>
+                                                    <tspan x="32.02909" y="61.30901">Neutrum</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 212.987778, 401.704285)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="31.61454" y="69.709">
+                                                    <tspan x="39.54521" y="36.109">много</tspan>
+                                                    <tspan x="12.33037" y="52.909">(не принимают</tspan>
+                                                    <tspan xml:space="preserve" x="103.2278" y="52.909"> </tspan>
+                                                    <tspan x="31.61454" y="69.709">умлаута)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 342.945984, 401.704285)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="31.61454" y="69.709">
+                                                    <tspan x="14.6331" y="36.109">некоторые (не</tspan>
+                                                    <tspan xml:space="preserve" x="100.9251" y="36.109"> </tspan>
+                                                    <tspan x="23.26787" y="52.909">принимают</tspan>
+                                                    <tspan xml:space="preserve" x="92.29032" y="52.909"> </tspan>
+                                                    <tspan x="31.61454" y="69.709">умлаута)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 472.904175, 401.704285)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="34.98954" y="69.709">
+                                                    <tspan x="18.22148" y="36.109">большинство</tspan>
+                                                    <tspan xml:space="preserve" x="97.33671" y="36.109"> </tspan>
+                                                    <tspan x="21.14287" y="52.909">(принимают</tspan>
+                                                    <tspan xml:space="preserve" x="94.41532" y="52.909"> </tspan>
+                                                    <tspan x="34.98954" y="69.709">умлаут)</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 602.862366, 401.704285)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="40.8416" y="61.30901">
+                                                    <tspan x="7.779095" y="44.509">заимствованные</tspan>
+                                                    <tspan xml:space="preserve" x="107.7791" y="44.509"> </tspan>
+                                                    <tspan x="40.8416" y="61.30901">слова</tspan>
+                                                </text>
+                                            </g>
+                                            <g transform="matrix(1, 0, 0, 1, 732.820557, 401.704285)">
+                                                <text class="opcty-1" font-family="Calibri" font-style="normal"
+                                                    font-weight="normal" font-stretch="normal" font-size="10.5pt" fill="#000000"
+                                                    x="31.61454" y="78.109">
+                                                    <tspan x="11.63066" y="27.709">на –er, -el, -en, -</tspan>
+                                                    <tspan x="17.15409" y="44.509">chen, -lein (не</tspan>
+                                                    <tspan xml:space="preserve" x="98.40408" y="44.509"> </tspan>
+                                                    <tspan x="23.26787" y="61.309">принимают</tspan>
+                                                    <tspan xml:space="preserve" x="92.29032" y="61.309"> </tspan>
+                                                    <tspan x="31.61454" y="78.109">умлаута)</tspan>
+                                                </text>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="78.39552">
+                                                <tspan x="0" y="51.09312">Множественное число</tspan>
+                                                <tspan x="0" y="78.39552" font-size="15pt">Plural der Substantive
+                                                </tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide-8 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="course-slide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="100%" height="100%" class="slides-canvas" pointer-events="none"
+                                    viewBox="0 0 960 540">
+                                    <defs>
+                                        <symbol id="page9-pic9" viewBox="0 0 35 35" preserveAspectRatio="none">
+                                            <image width="35" height="35" preserveAspectRatio="none"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAABOpJREFUWEflmG1olWUYxzeXWc2lhmUZEUGFEllfStM+lNQwjSQypS+hCEVElGhpRe1IsGjQ1CQEDctphWcuLZFpb5C2ZnBkK4+mRztrB9bOmqu9v7/0ux7/O2ePzzlnnr3Qh/5wcd/X/3q9X87zPFvG/wItLS0zOjs775Q65sjs7+9/va+vr1B6SvT29r6Ibzvja6LGBjRxK0lLe3p6uijwm+iUIGYN/meIO0HMl42NjdNkGjlIOo9k1V1dXduQ1cwrZEqJgYGBDRzTJ8Rn09Bh4k60tbXdLHP6YGW5yD/t7e1vmU7ixSQNOsZhgO96mi+xeV5e3gTyfGqx8Nc7DumAoPtI8HdTU9PLojJY6TJWmU4z+6TaTmV2d3eX0NAPzCeKHh4kmkHRcEdHxzuiHNDcUyNtxlBTU3MN8RU09L6o4YHzXhKVSo1htM0Y4OaQ/wK786Co5CDJEopGGxoabhEVg5o5KTUlyLOOws6duRTkec+OS2pi2LlS7CcubJ4oF9TMKe7ObIrZLyuf8WOkmLld0M3Y16AvIJePZooV6gIPxBvw+4N8uaK8IMlCHMLNzc0Jbzy2RRQZINEvzMu4kEWMG9HXMX+T4luRb+B+prE2mt6tUA/w+dAWINULjNutgFQPrEl2bQUru0tUQkSjUXsVLOOXOFeUB9SZzyLOs7YpouKAvIpmKkiyVNS4glPIoZkA42JRcdDMLIzh+vr6maLGHdTbT12f1Djo0B5ox0Kh0CRR4w7uzSZOY6fUOGhmLc0k/CkOguBH8XmG1dwoKiGwTyDfInxXcM+mi/aAe/MKzXwhNQ6C8zHskuoCySdjK8bnVwqUMz/L/GGZXcB3KvaD2CuRcuQURefJ7AK5nsV+hJgsURcBWUAS75YBdsSH7Uxra6uzI8w3WkP2eHcchgC+EKkY3BHplZ6CgGaWU/dbbFeKuggIH0U/k+oCK1tP0Cqp5juNAnsYp4qKAd5nxyPVFjkTbjfj1aJisJ3B5t0ZDM9jOIQhU9S4g5pvUM8vNQ5Wv4Bmghi9D6EkYLU3Ibchd2hM67FgO4ZskhqHbTkGu5gPiEoJ/KfjH8I/wmiXtRo5d7lfc1VVVfaQPU5M7EhdwPg592aL1JSgmSz8tyMREs5HziM7jZdLSthJcEy/E3OdKDdo5AkcziX7eCYwOxAIxL7S0HNo5hhiP/fyoUfM/Ira2tpsqR7gvwf5SKoXfr/fVnucrt8W5QLFd9Dwk1IdwDlvcsYlohzgtxRJ+NzizX4vi44y3iMqMUiQi2M9L8xZomKwlVD0K6kO0FdbM8S8IMoBlB9bok+ETPIcxbZVemrg+AFNVfLSzBHlgG/i20kURnZRfDmjPfzC+G/WmE8TTzPuQK9mQZ6/KMlbQOxp/DzPqITAcSLJvue4vo5EIq6HFYVmYythtLvyHQUfN54ij8AdgTtKsf0cwd1OwBDA2/vvAn6pj+dS0NAUAn+05Il+rsne7sFg0P1oB+TK0o78xfiQ6PRQV1c3mVUU0VAViVbZH2MyXTZYyFxiy8hzEpkjeuRgZStpKGQ7xfavTPaNPAiK5rADC4nZy/gn4xa4a2UePezCkfBVEpfR1FnGfUgh87XYnmN8icLvwhUxDzCeRrYR47k7YwaST0Lup+AGitufJwfQS5GDzO1PlgLmj9Hg6P/r8N8hI+NfS5vzcIJFOJUAAAAASUVORK5CYII=">
+                                            </image>
+                                        </symbol>
+                                        <pattern id="page9-im9" x="820" y="11" width="36" height="36"
+                                            patternUnits="userSpaceOnUse">
+                                            <use width="35" height="35" xlink:href="#page9-pic9" preserveAspectRatio="none">
+                                            </use>
+                                        </pattern>
+                                    </defs>
+                                    <g text-rendering="geometricPrecision" pointer-events="painted" transform="scale(1, 1)">
+                                        <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"></rect>
+                                        <path class="content-left-1" fill="#FFD966"
+                                            d="M243.63 320.88L243.63 273.94 66 273.94 66 180.06 243.63 180.06 243.63 133.13 339.28 227 243.63 320.88z">
+                                        </path>
+                                        <path class="content-left-1" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M243.63 320.88L243.63 273.94 66 273.94 66 180.06 243.63 180.06 243.63 133.13 339.28 227 243.63 320.88z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 77.20008, 229.080536)">
+                                            <text class="content-left-1" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="13.5pt" fill="#000000"
+                                                x="62.12434" y="30.36284">
+                                                <tspan x="27.23714" y="-23.63716" xml:space="preserve">die Butter
+                                                </tspan>
+                                                <tspan xml:space="preserve" x="99.65217" y="-23.63716"> </tspan>
+                                                <tspan x="107.9022" y="-23.63716" xml:space="preserve">dаs Obst</tspan>
+                                                <tspan x="24.22005" y="3.362839">das Wetter die Liebe</tspan>
+                                                <tspan xml:space="preserve" x="57.99934" y="30.36284"> </tspan>
+                                                <tspan x="62.12434" y="30.36284">die Jugend</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-3" fill="#FFD966"
+                                            d="M508.18 308.36L508.18 353.92 688.64 353.92 688.64 445.04 508.18 445.04 508.18 490.61 411 399.48 508.18 308.36z">
+                                        </path>
+                                        <path class="content-right-3" stroke-width="1" stroke="#FFFFFF" fill="none"
+                                            d="M508.18 308.36L508.18 353.92 688.64 353.92 688.64 445.04 508.18 445.04 508.18 490.61 411 399.48 508.18 308.36z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 469.88623, 404.311035)">
+                                            <text class="content-right-3" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="13.5pt" fill="#000000"
+                                                x="69.15375" y="27.61276">
+                                                <tspan x="68.68793" y="-26.38724">die Eltern</tspan>
+                                                <tspan x="67.47308" y="0.6127625">die Ferien</tspan>
+                                                <tspan xml:space="preserve" x="140.0844" y="0.6127625"> </tspan>
+                                                <tspan x="69.15375" y="27.61276">die Alpen</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20001, 32.3499947)">
+                                            <text class="title-right" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="33pt" fill="#000000" x="0"
+                                                y="38.13312">
+                                                <tspan x="0" y="38.13312">Исключения</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-right-2" fill="#D9D9D9"
+                                            d="M354.45 170.3L688.64 170.3 688.64 273.2 354.45 273.2z"></path>
+                                        <g transform="matrix(1, 0, 0, 1, 361.646851, 173.8982)">
+                                            <text class="content-right-2" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="56.24603" y="52.69037">
+                                                <tspan x="56.24603" y="52.69037">Только в единственном числе!</tspan>
+                                            </text>
+                                        </g>
+                                        <path class="content-left-4" fill="#D9D9D9"
+                                            d="M66 348.03L400.2 348.03 400.2 450.93 66 450.93z">
+                                        </path>
+                                        <g transform="matrix(1, 0, 0, 1, 73.20007, 351.628662)">
+                                            <text class="content-left-4" font-family="Calibri" font-style="normal"
+                                                font-weight="normal" font-stretch="normal" font-size="12pt" fill="#000000"
+                                                x="45.61713" y="52.69037">
+                                                <tspan x="45.61713" y="52.69037">Только во множественном числе!</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-lg btn-primary" href="#">Выполнить задание</a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

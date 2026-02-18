@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Профиль: Настройки"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": true,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <!-- profile-sidebar-widget -->
+                    @@include('partials/components/profile-sidebar-widget.html', {
+                        "activeLink": "profile-settings"
+                    })
+                </div>
+
+                <!-- Main content -->
+                <div class="col-md-8 col-lg-6 vstack gap-5">
+
+                    <!-- Main info -->
+                    <div class="card">
+
+                        <!-- Title START -->
+                        <div class="card-header border-0 pb-0">
+                            <h1 class="h5 card-title">Настройки учетной записи</h1>
+                            <p class="mb-0">Учитывая ключевые сценарии поведения, граница обучения кадров требует от нас
+                                анализа позиций, занимаемых участниками в отношении поставленных задач.</p>
+                        </div>
+                        <!-- Card header START -->
+                        <!-- Card body START -->
+                        <div class="card-body">
+                            <!-- Form settings START -->
+                            <form class="row g-3">
+                                <!-- First name -->
+                                <div class="col-sm-6 col-lg-4">
+                                    <label class="form-label">Имя</label>
+                                    <input type="text" class="form-control" placeholder="" value="Иван">
+                                </div>
+                                <!-- Last name -->
+                                <div class="col-sm-6 col-lg-4">
+                                    <label class="form-label">Фамилия</label>
+                                    <input type="text" class="form-control" placeholder="" value="Иванов">
+                                </div>
+                                <!-- Additional name -->
+                                <div class="col-sm-6 col-lg-4">
+                                    <label class="form-label">Отчество</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <!-- User name -->
+                                <div class="col-sm-6">
+                                    <label class="form-label">Ник</label>
+                                    <input type="text" class="form-control" placeholder="" value="username">
+                                </div>
+                                <!-- Birthday -->
+                                <div class="col-lg-6">
+                                    <label class="form-label">Дата рождения</label>
+                                    <input type="text" class="form-control flatpickr" value="12/12/1990">
+                                </div>
+                                <!-- Allow checkbox -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="allowChecked" checked>
+                                        <label class="form-check-label" for="allowChecked">
+                                            Разрешить любому добавить вас в друзья
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Phone number -->
+                                <div class="col-sm-6">
+                                    <label class="form-label">Телефон</label>
+                                    <input type="text" class="form-control" placeholder="" value="+7 (916) 123-12-34">
+                                    <!-- Add new number -->
+                                    <a class="btn btn-sm btn-dashed rounded mt-2" href="#"> <i
+                                            class="bi bi-plus-circle-dotted me-1"></i>Добавить телефон</a>
+                                </div>
+                                <!-- Phone number -->
+                                <div class="col-sm-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control" placeholder="" value="ivan@mail.ru">
+                                    <!-- Add new email -->
+                                    <a class="btn btn-sm btn-dashed rounded mt-2" href="#"> <i
+                                            class="bi bi-plus-circle-dotted me-1"></i>Добавить email</a>
+                                </div>
+                                <!-- Page information -->
+                                <div class="col-12">
+                                    <label class="form-label">О себе</label>
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Description (Required)">Картельные сговоры не допускают ситуации, при которой действия представителей оппозиции будут функционально разнесены на независимые элементы. А ещё сделанные на базе интернет-аналитики выводы, превозмогая сложившуюся непростую экономическую ситуацию, заблокированы в рамках своих собственных рациональных ограничений.</textarea>
+                                    <small>Лимит символов: 300</small>
+                                </div>
+                                <!-- Button  -->
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                                </div>
+                            </form>
+                            <!-- Settings END -->
+                        </div>
+                        <!-- Card body END -->
+                    </div>
+
+                    <!-- Change password -->
+                    <div class="card">
+                        <!-- Title START -->
+                        <div class="card-header border-0 pb-0">
+                            <h5 class="card-title">Смена пароля</h5>
+                            <p class="mb-0">А ещё сделанные на базе интернет-аналитики выводы, превозмогая сложившуюся
+                                непростую экономическую ситуацию.</p>
+                        </div>
+                        <!-- Title START -->
+                        <div class="card-body">
+                            <!-- Settings START -->
+                            <form class="row g-3">
+                                <!-- Current password -->
+                                <div class="col-12">
+                                    <label class="form-label">Текущий пароль</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <!-- New password -->
+                                <div class="col-12">
+                                    <label class="form-label">Новый пароль</label>
+                                    <!-- Input group -->
+                                    <div class="input-group">
+                                        <input class="form-control fakepassword" type="password" id="psw-input"
+                                            placeholder="Новый пароль">
+                                        <span class="input-group-text p-0">
+                                            <i class="fakepasswordicon fa-solid fa-eye-slash cursor-pointer p-2 w-40px"></i>
+                                        </span>
+                                    </div>
+                                    <!-- Pswmeter -->
+                                    <div id="pswmeter" class="mt-2"></div>
+                                    <div id="pswmeter-message" class="rounded mt-1"></div>
+                                </div>
+                                <!-- Confirm password -->
+                                <div class="col-12">
+                                    <label class="form-label">Подтвердить пароль</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <!-- Button  -->
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                                </div>
+                            </form>
+                            <!-- Settings END -->
+                        </div>
+                    </div>
+
+                    <!-- Notification -->
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header border-0 pb-0">
+                            <h5 class="card-title">Уведомления</h5>
+                            <p class="mb-0">Внезапно, некоторые особенности внутренней политики освещают чрезвычайно
+                                интересные особенности картины в целом.</p>
+                        </div>
+                        <!-- Card header START -->
+                        <!-- Card body START -->
+                        <div class="card-body pb-0">
+                            <!-- Notification START -->
+                            <ul class="list-group list-group-flush">
+                                <!-- Notification list item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Комментарии</h6>
+                                        <p class="small mb-0">Комментарии в постах блога.</p>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="NotiSwitchCheckChecked" checked>
+                                    </div>
+                                </li>
+                                <!-- Notification list item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Подписки</h6>
+                                        <p class="small mb-0">А также непосредственные участники.</p>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="NotiSwitchCheckChecked3">
+                                    </div>
+                                </li>
+                                <!-- Notification list item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Дни Рождения</h6>
+                                        <p class="small mb-0">Высокое качество позиционных исследований.</p>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="NotiSwitchCheckChecked4">
+                                    </div>
+                                </li>
+                                <!-- Notification list item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">События</h6>
+                                        <p class="small mb-0">Реализация намеченных плановых заданий.</p>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="NotiSwitchCheckChecked5" checked>
+                                    </div>
+                                </li>
+                                <!-- Notification list item -->
+                                <li class="list-group-item px-0 py-3">
+                                    <!-- Accordion START -->
+                                    <div class="accordion accordion-flush border-0" id="emailNotifications">
+                                        <!-- Accordion item -->
+                                        <div class="accordion-item bg-transparent">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <a href="#"
+                                                    class="accordion-button mb-0 p-0 collapsed bg-transparent shadow-none"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    <span>
+                                                        <span class="mb-0 h6 d-block">Email-уведомления</span>
+                                                        <small class="small mb-0 text-secondary">Повседневная
+                                                            практика.</small>
+                                                    </span>
+                                                </a>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne" data-bs-parent="#emailNotifications">
+                                                <div class="accordion-body p-0 pt-3">
+                                                    <!-- Notification list item -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="NotiSwitchCheckChecked6" checked>
+                                                        <label class="form-check-label" for="NotiSwitchCheckChecked6">
+                                                            Уведомления об уроках
+                                                        </label>
+                                                    </div>
+                                                    <!-- Notification list item -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="NotiSwitchCheckChecke7">
+                                                        <label class="form-check-label" for="NotiSwitchCheckChecke7">
+                                                            Уведомления о сообщениях
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="mt-3">
+                                                        <h6>Частота уведомлений</h6>
+                                                        <!-- Notification list item -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="NotiRadio"
+                                                                id="NotiRadio1">
+                                                            <label class="form-check-label" for="NotiRadio1">
+                                                                День
+                                                            </label>
+                                                        </div>
+                                                        <!-- Notification list item -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="NotiRadio"
+                                                                id="NotiRadio2" checked>
+                                                            <label class="form-check-label" for="NotiRadio2">
+                                                                Неделя
+                                                            </label>
+                                                        </div>
+                                                        <!-- Notification list item -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="NotiRadio"
+                                                                id="NotiRadio3">
+                                                            <label class="form-check-label" for="NotiRadio3">
+                                                                Периодически
+                                                            </label>
+                                                        </div>
+                                                        <!-- Notification list item -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="NotiRadio"
+                                                                id="NotiRadio4" checked>
+                                                            <label class="form-check-label" for="NotiRadio4">
+                                                                Отключить
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion END -->
+                                </li>
+                                <!-- Notification list item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Push-уведомления</h6>
+                                        <p class="small mb-0">Качество позиционных исследований однозначно.</p>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="NotiSwitchCheckChecked8" checked>
+                                    </div>
+                                </li>
+                                <!-- Notification list item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Еженедельная сводка аккаунта <span class="badge bg-primary smaller">
+                                                PRO-аккаунт</span>
+                                        </h6>
+                                        <p class="small mb-0">Высокотехнологичная концепция.</p>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="NotiSwitchCheckChecked9" disabled>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Notification END -->
+
+                        </div>
+                        <!-- Card body END -->
+                        <!-- Button save -->
+                        <div class="card-footer pt-0 text-end border-0">
+                            <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                        </div>
+                    </div>
+
+                    <!-- Privacy and safety -->
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header border-0 pb-0">
+                            <h5 class="card-title">Конфиденциальность и безопасность</h5>
+                            <p class="mb-0">Как принято считать, акционеры крупнейших компаний освещают чрезвычайно
+                                интересные особенности.</p>
+                        </div>
+                        <!-- Card header START -->
+                        <!-- Card body START -->
+                        <div class="card-body">
+                            <!-- Privacy START -->
+                            <ul class="list-group">
+
+                                <!-- Privacy item -->
+                                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                                    <div class="me-md-3">
+                                        <h6 class="mb-0">Использовать двухфакторную аутентификацию</h6>
+                                        <p class="small mb-0">Реализация намеченных плановых заданий.</p>
+                                    </div>
+                                    <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i
+                                            class="bi bi-pencil-square"></i>
+                                        Изменить</button>
+                                </li>
+
+                                <!-- Privacy item -->
+                                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                                    <div class="me-md-3">
+                                        <h6 class="mb-0">Вход в систему</h6>
+                                        <p class="small mb-0">Разработка и распределение внутренних резервов</p>
+                                    </div>
+                                    <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0" data-bs-toggle="modal"
+                                        data-bs-target="#modalLoginActivity"> <i class="bi bi-eye"></i>
+                                        Просмотреть</button>
+                                </li>
+
+                                <!-- Privacy item -->
+                                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                                    <div class="me-md-3">
+                                        <h6 class="mb-0">Управление своими данными и действиями</h6>
+                                        <p class="small mb-0">Выберите язык для перевода</p>
+                                    </div>
+                                    <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i
+                                            class="bi bi-pencil-square"></i>
+                                        Изменить</button>
+                                </li>
+
+                                <!-- Privacy item -->
+                                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                                    <div class="me-md-3">
+                                        <h6 class="mb-0">История поиска</h6>
+                                        <p class="small mb-0">Чрезвычайно интересные особенности</p>
+                                    </div>
+                                    <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i
+                                            class="bi bi-pencil-square"></i>
+                                        Изменить</button>
+                                </li>
+
+                                <!-- Privacy item -->
+                                <li class="list-group-item d-md-flex justify-content-between align-items-start">
+                                    <div class="me-md-3">
+                                        <h6 class="mb-0">Разрешенные услуги</h6>
+                                        <p class="small mb-0">Инициированные исключительно синтетически</p>
+                                    </div>
+                                    <button class="btn btn-primary-soft btn-sm mt-1 mt-md-0"> <i
+                                            class="bi bi-pencil-square"></i>
+                                        Изменить</button>
+                                </li>
+                            </ul>
+                            <!-- Privacy END -->
+                        </div>
+                        <!-- Card body END -->
+                        <!-- Button save -->
+                        <div class="card-footer pt-0 text-end border-0">
+                            <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                        </div>
+                    </div>
+
+                    <!-- Communications -->
+                    <div class="card">
+                        <!-- Title START -->
+                        <div class="card-header border-0 pb-0">
+                            <h5 class="card-title">Кто может связаться с вами?</h5>
+                            <p class="mb-0">Внезапно, некоторые особенности внутренней политики освещают чрезвычайно
+                                интересные особенности.</p>
+                        </div>
+                        <!-- Title START -->
+                        <!-- Card body START -->
+                        <div class="card-body">
+                            <!-- Accordion START -->
+                            <div class="accordion" id="communications">
+                                <!-- Accordion item -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header" id="communicationOne">
+                                        <button class="accordion-button mb-0 h6" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#communicationcollapseOne" aria-expanded="true"
+                                            aria-controls="communicationcollapseOne">
+                                            Запрос на подключение
+                                        </button>
+                                    </h2>
+                                    <!-- Accordion info -->
+                                    <div id="communicationcollapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="communicationOne" data-bs-parent="#communications">
+                                        <div class="accordion-body">
+                                            <!-- Notification list item -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="ComRadio" id="ComRadio5">
+                                                <label class="form-check-label" for="ComRadio5">
+                                                    Все пользователи (рекомендуется)
+                                                </label>
+                                            </div>
+                                            <!-- Notification list item -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="ComRadio" id="ComRadio2"
+                                                    checked>
+                                                <label class="form-check-label" for="ComRadio2">
+                                                    Только люди, которые знают ваш адрес электронной почты
+                                                </label>
+                                            </div>
+                                            <!-- Notification list item -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="ComRadio" id="ComRadio3">
+                                                <label class="form-check-label" for="ComRadio3">
+                                                    Только люди, которые отображаются в вашем списке общих контактов
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion item -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header" id="communicationTwo">
+                                        <button class="accordion-button mb-0 h6 collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#communicationcollapseTwo"
+                                            aria-expanded="false" aria-controls="communicationcollapseTwo">
+                                            Кто может отправлять вам сообщения
+                                        </button>
+                                    </h2>
+                                    <!-- Accordion info -->
+                                    <div id="communicationcollapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="communicationTwo" data-bs-parent="#communications">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <!-- Notification list item -->
+                                                <li
+                                                    class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                                                    <div class="me-2">
+                                                        <p class="mb-0">Включить уведомления о запросах сообщений</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="comSwitchCheckChecked">
+                                                    </div>
+                                                </li>
+                                                <!-- Notification list item -->
+                                                <li
+                                                    class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                                                    <div class="me-2">
+                                                        <p class="mb-0">Разрешить пользователям добавлять вас в группы
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="comSwitchCheckChecked2" checked>
+                                                    </div>
+                                                </li>
+                                                <!-- Notification list item -->
+                                                <li
+                                                    class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                                                    <div class="me-2">
+                                                        <p class="mb-0">Разрешить рекламные сообщения</p>
+                                                        <p class="small">Ваша личная информация находится в
+                                                            безопасности, если вы не отвечаете на их рекламные
+                                                            сообщения.</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="comSwitchCheckChecked3" checked>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion item -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header" id="communicationThree">
+                                        <button class="accordion-button mb-0 h6 collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#communicationcollapseThree"
+                                            aria-expanded="false" aria-controls="communicationcollapseThree">
+                                            Как люди могут найти вас
+                                        </button>
+                                    </h2>
+                                    <!-- Accordion info -->
+                                    <div id="communicationcollapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="communicationThree" data-bs-parent="#communications">
+                                        <div class="accordion-body">
+                                            <ul class="list-group list-group-flush">
+                                                <!-- Notification list item -->
+                                                <li
+                                                    class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                                                    <div class="me-2">
+                                                        <p class="mb-0">Разрешить поисковым системам показывать ваш
+                                                            профиль?</p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="comSwitchCheckChecked4" checked>
+                                                    </div>
+                                                </li>
+                                                <!-- Notification list item -->
+                                                <li
+                                                    class="list-group-item d-sm-flex justify-content-between align-items-center px-0 py-1 border-0">
+                                                    <div class="me-2">
+                                                        <p class="mb-0">Разрешить людям искать по вашему адресу
+                                                            электронной почты? </p>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="comSwitchCheckChecked5">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion END -->
+                        </div>
+                        <!-- Card body END -->
+                        <!-- Button save -->
+                        <div class="card-footer pt-0 text-end border-0">
+                            <button type="submit" class="btn btn-primary mb-0">Сохранить изменения</button>
+                        </div>
+                    </div>
+
+                    <!-- Delete -->
+                    <div class="card">
+                        <div class="card-header border-0 pb-0">
+                            <h5 class="card-title">Удалить аккаунт</h5>
+                            <p class="mb-0">Не следует, однако, забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу.</p>
+                        </div>
+                        <div class="card-body">
+                            <h6>Прежде чем Вы уйдёте...</h6>
+                            <ul>
+                                <li>Сделайте резервную копию ваших данных <a href="#">Здесь</a> </li>
+                                <li>Если вы удалите свою учетную запись, вы потеряете все свои данные.</li>
+                            </ul>
+                            <div class="form-check form-check-md my-4">
+                                <input class="form-check-input" type="checkbox" value="" id="deleteaccountCheck">
+                                <label class="form-check-label" for="deleteaccountCheck">Да, я хочу удалить свой аккаунт</label>
+                            </div>
+                            <a href="#" class="btn btn-danger btn-sm mb-0 disabled">Удалить аккаунт</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+    <!-- Login activity -->
+    @@include('partials/modals/login-activity.html')
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

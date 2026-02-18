@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------
+[ variables ]*/
+
+:root {
+    // Theme fonts
+    --theme-ff-main: 'Comfortaa', sans-serif;
+    --theme-ff-title: 'Comfortaa', sans-serif;
+
+    // Theme font sizes
+    --bs-body-font-size: 16px;
+    --fs-h1: calc(1.359375rem + 1.3125vw);
+    --fs-h2: calc(1.3125rem + 0.75vw);
+    --fs-h3: calc(1.2890625rem + 0.46875vw);
+    --fs-h4: calc(1.265625rem + 0.1875vw);
+    --fs-h5: 1.171875rem;
+    --fs-h6: 0.9375rem;
+    --fs-small: 13px;
+    --fs-x-small: 12px;
+
+    @include media-breakpoint-up(xl) {
+        --bs-body-font-size: 16px;
+        --fs-h1: 2.34375rem;
+        --fs-h2: 1.875rem;
+        --fs-h3: 1.640625rem;
+        --fs-h4: 1.40625rem;
+        --fs-h5: 1.171875rem;
+        --fs-h6: 0.9375rem;
+        --fs-small: 14px;
+        --fs-x-small: 12px;
+    }
+}

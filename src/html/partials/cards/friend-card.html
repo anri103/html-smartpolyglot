@@ -1,0 +1,46 @@
+<div class="card shadow-none text-center h-100">
+    <!-- Card body -->
+    <div class="card-body p-2 pb-0">
+        <div class="avatar avatar-xl @@if (haveStory) {avatar-story}">
+            <a href="@@if (myFriend) {profile-friend.html} @@if (!myFriend) {profile-friend-not.html}">
+                <img class="avatar-img rounded-circle" src="@@avatarURL" alt="">
+            </a>
+        </div>
+        <h6 class="card-title mb-1 mt-3">
+            <a href="@@if (myFriend) {profile-friend.html} @@if (!myFriend) {profile-friend-not.html}">@@title</a>
+        </h6>
+        <p class="mb-0 small lh-sm">@@meta</p>
+    </div>
+    <!-- Card footer -->
+    <div class="card-footer p-2 border-0">
+        
+        @@if (!wantInviteMe) {
+        <a href="profile-messaging.html" class="btn btn-sm btn-primary mb-1 w-100" title="Написать">
+            <i class="bi bi-chat-left-text me-1"></i>
+            <span>Написать</span>
+        </a>
+        }
+
+        @@if (myFriend) {
+        <button class="btn btn-sm btn-danger mb-1 w-100" title="Удалить">
+            <i class="bi bi-person-x me-1"></i>
+            <span>Удалить</span>
+        </button>
+        }
+
+        @@if (!myFriend) {
+        <button class="btn btn-sm btn-success mb-1 w-100" title="Добавить">
+            <i class="bi bi-person-check"></i>
+            <span>Добавить</span>
+        </button>
+        }
+
+        @@if (wantInviteMe) {
+        <button class="btn btn-sm btn-danger mb-1 w-100" title="Отклонить">
+            <i class="bi bi-person-x me-1"></i>
+            <span>Отклонить</span>
+        </button>
+        }
+
+    </div>
+</div>

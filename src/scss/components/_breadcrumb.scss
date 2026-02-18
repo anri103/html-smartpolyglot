@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+[ breadcrumb ]*/
+
+.breadcrumb-item {
+    font-size: 0.8125rem;
+}
+
+.breadcrumb-item a {
+    color: #676a79;
+}
+
+.breadcrumb-item a:hover {
+    color: #0f6fec;
+}
+
+.breadcrumb.breadcrumb-dots .breadcrumb-item+.breadcrumb-item::before {
+    content: "•";
+    font-size: 22px;
+    line-height: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Главная (Пользователь авторизован)"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": true,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Hero -->
+        @@include('partials/sections/frontpage-hero.html')
+
+        <!-- Education Tabs -->
+        @@include('partials/sections/frontpage-education-tabs.html')
+
+        <!-- SMART -->
+        @@include('partials/sections/frontpage-smart.html')
+
+        <!-- Jumbotron -->
+        @@include('partials/sections/jumbotron.html')
+
+        <!-- Blog Slider -->
+        @@include('partials/sections/blog-slider.html')
+
+        <!-- CTA -->
+        @@include('partials/sections/cta-two-columns.html')
+
+        <!-- Feedback -->
+        @@include('partials/sections/feedback-slider.html')
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+    <!-- Cookie alert -->
+    @@include('partials/modals/cookie-alert.html')
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

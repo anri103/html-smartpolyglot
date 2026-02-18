@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------
+[ choices ]*/
+
+.choices .choices__inner {
+    background-color: #fff;
+    color: #29292e;
+    border: 1px solid #e1e4e6;
+    line-height: 1.5;
+    border-radius: 0.4rem;
+    min-height: auto;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9375rem;
+}
+
+.choices .choices__list--multiple .choices__item {
+    background-color: #eef0f2;
+    border: 1px solid #eef0f2;
+    border-radius: 0.4rem;
+    color: #29292e;
+}
+
+.choices .choices__list--dropdown {
+    background: #fff;
+    border: 1px solid #e1e4e6;
+}
+
+.choices .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #eef0f2;
+}
+
+.choices .choices__list--dropdown .choices__item {
+    color: #14191e;
+}
+
+.choices .choices__input {
+    background: transparent;
+    padding: 0;
+    color: #29292e;
+}
+
+.choices__list--single {
+    padding: 0;
+}
+
+.choices[data-type*=select-multiple] .choices__button,
+.choices[data-type*=text] .choices__button {
+    border-left: 1px solid #14191e;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+}
+
+.choices[data-type*=select-one]:after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border: none;
+    border-width: 5px;
+    position: absolute;
+    right: 11.5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 12px;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    margin-top: 0;
+}
+
+.choices[data-type*=select-one] .choices__input {
+    background: #fff;
+    border-color: #fff;
+}
+
+.choices.is-focused .choices__inner {
+    border-color: #0f6fec;
+}
+
+.choices[data-type*=select-one] .choices__list>.choices__list>.choices__item--selectable,
+.choices[data-type*=select-multiple] .choices__list>.choices__list>.choices__item--selectable {
+    padding-right: 0px;
+}
+
+.choices[data-type*=select-one] .choices__list>.choices__list>.choices__item--selectable::after,
+.choices[data-type*=select-multiple] .choices__list>.choices__list>.choices__item--selectable::after {
+    display: none;
+}

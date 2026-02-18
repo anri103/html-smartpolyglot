@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Блог"
+})
+
+<body>
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html', {
+        "userAuthorized": false,
+    })
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Main content -->
+                <div class="col-lg-8">
+                    <div class="p-4">
+
+                        <h1 class="h4 mb-4">Блог</h1>
+
+                        <!-- Blog item -->
+                        @@include('partials/cards/blog-card.html', {
+                            "thumbURL": "assets/img/post/4by3/03.jpg",
+                            "title": "15 апреля отмечается международный день культуры",
+                            "description": "Повседневная практика показывает, что реализация намеченных плановых заданий играет важную роль в формировании дальнейших направлений развития."
+                        })
+                        <hr class="my-4">
+
+                        <!-- Blog item -->
+                        @@include('partials/cards/blog-card.html', {
+                            "thumbURL": "assets/img/post/4by3/04.jpg",
+                            "title": "Древнеанглийский, среднеанглийский и современный",
+                            "description": "Сложившаяся структура организации способствует подготовки и реализации систем массового участия."
+                        })
+                        <hr class="my-4">
+
+                        <!-- Blog item -->
+                        @@include('partials/cards/blog-card.html', {
+                            "thumbURL": "assets/img/post/4by3/05.jpg",
+                            "title": "Традиции британской королевской семьи",
+                            "description": "Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности."
+                        })
+                        <hr class="my-4">
+
+                        <!-- Blog item -->
+                        @@include('partials/cards/blog-card.html', {
+                            "thumbURL": "assets/img/post/4by3/06.jpg",
+                            "title": "Секреты делового общения в Англии",
+                            "description": "В значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач."
+                        })
+                        <hr class="my-4">
+                         
+                        <div class="mt-4">
+                            <!-- pagination -->
+                            @@include('partials/components/pagination.html')
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right sidebar -->
+                <div class="col-lg-4">
+                    <div class="row g-4">
+                        <!-- Card News -->
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header pb-0 border-0">
+                                    <h5 class="card-title mb-0">Метки</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-inline mb-0 d-flex flex-wrap gap-2">
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">блог</a>
+                                        </li>
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">новости</a>
+                                        </li>
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">обучение</a>
+                                        </li>
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">путешествия</a>
+                                        </li>
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">статьи</a>
+                                        </li>
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">английский</a>
+                                        </li>
+                                        <li class="list-inline-item m-0">
+                                            <a class="btn btn-outline-light btn-sm" href="#">события</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+
+    <!-- SCRIPTS -->
+    @@include('partials/layout/scripts.html')
+
+</body>
+
+</html>

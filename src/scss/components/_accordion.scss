@@ -1,0 +1,80 @@
+/*------------------------------------------------------------------
+[ accordion ]*/
+
+.accordion.accordion-icon .accordion-item {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion.accordion-icon .accordion-header {
+    position: relative;
+}
+
+.accordion.accordion-icon .accordion-header .accordion-button {
+    background: transparent;
+    font-size: inherit;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.accordion.accordion-icon .accordion-header .accordion-button[aria-expanded=true] {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion.accordion-icon .accordion-header .accordion-button:after {
+    content: "";
+    background: #14191e !important;
+    width: 10px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 47%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    z-index: 9;
+}
+
+.accordion.accordion-icon .accordion-header .accordion-button:before {
+    content: "";
+    background: #14191e !important;
+    width: 10px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 47%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    z-index: 9;
+}
+
+.accordion.accordion-icon .accordion-header .accordion-button[aria-expanded=false]:after {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+.accordion.accordion-icon .accordion-header .accordion-button[aria-expanded=true]:before {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+}
+
+.accordion.accordion-icon .accordion-collapse {
+    border: none;
+}
+
+.accordion.accordion-icon .accordion-body {
+    padding: 1rem;
+}

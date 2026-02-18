@@ -1,0 +1,55 @@
+<section class="section-feedback py-4 py-sm-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center">
+                    <h2>Отзывы</h2>
+                </div>
+
+                <div class="feedback__wrap">
+                    <div class="owl-carousel feedback__slider">
+
+                        <div class="item-fixed-height">
+                            @@include('../cards/feedback-slide.html', {
+                                "userAvatarURL": "assets/img/testimonial-1.png",
+                                "userName": "Мария",
+                                "feedbackText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis ex ea aliquam odit magni ipsa doloribus culpa! Sequi."
+                            })
+                        </div>
+
+                        <div class="item-fixed-height">
+                            @@include('../cards/feedback-slide.html', {
+                                "userAvatarURL": "assets/img/testimonial-2.png",
+                                "userName": "Владислав",
+                                "feedbackText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis ex ea aliquam odit magni ipsa doloribus culpa! Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis ex ea aliquam odit magni ipsa doloribus culpa."
+                            })
+                        </div>
+
+                        <div class="item-fixed-height">
+                            @@include('../cards/feedback-slide.html', {
+                                "userAvatarURL": "assets/img/testimonial-2.png",
+                                "userName": "Илья",
+                                "feedbackText": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                            })
+                        </div>
+
+                        <div class="item-fixed-height">
+                            @@include('../cards/feedback-slide.html', {
+                                "userAvatarURL": "assets/img/testimonial-1.png",
+                                "userName": "Анна",
+                                "feedbackText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis ex ea aliquam odit magni ipsa doloribus culpa! Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis ex ea aliquam odit magni ipsa doloribus culpa."
+                            })
+                        </div>
+
+                    </div>
+
+                    <div class="feedbacks__btn-box">
+                        <button type="button" class="btn btn-feedbacks btn-left" id="testimonialsLeft"></button>
+                        <button type="button" class="btn btn-feedbacks btn-right" id="testimonialsRight"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

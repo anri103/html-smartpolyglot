@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox-master/dist/css/glightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/dropzone/dist/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/dist/flatpickr.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+    <!-- CSS for developers -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    <title>Статья</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar-light fixed-top header-static bg-mode">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img class="navbar-brand-item" src="assets/img/logo.svg" alt="logo">
+            </a>
+
+            <!-- Navbar toggler -->
+            <button type="button"
+                class="navbar-toggler ms-auto icon-md btn btn-light p-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <!-- Main Navbar -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <!-- Search -->
+                <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+                    <div class="nav-item w-100">
+                        <form class="rounded position-relative">
+                            <input class="form-control ps-5 bg-light" type="search" placeholder="Поиск в сообществе" aria-label="Search">
+                            <button type="submit" class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y">
+                                <i class="bi bi-search fs-5"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Menu -->
+                <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-courses.html">Учебник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Переводчик</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-messaging.html">Чат</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-friends.html">Сообщество</a>
+                    </li>
+                    <!-- Dropdown submenu -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню</a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                            <li>
+                                <a class="dropdown-item" href="#">Пункт 1</a>
+                            </li>
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Пункт 2</a>
+                                <ul class="dropdown-menu" data-bs-popper="none">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Подпункт 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Подпункт 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Пункт 3</a>
+                                <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Подпункт 1</a>
+                                    </li>
+                                    <li class="dropdown-submenu dropstart">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Подпункт 2</a>
+                                        <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Подпункт 1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Подпункт 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+
+            
+            
+            <!-- Nav right (NOT auth) -->
+            <div class="ms-3 ms-xl-auto">
+                <a class="btn btn-dark" href="sign-in.html">Войти</a>
+            </div>
+            
+
+        </div>
+    </nav>
+</header>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8 mx-auto">
+                    <div class="vstack gap-4">
+                        
+                        <!-- Blog single -->
+                        <div class="card card-body">
+
+                            <div class="mb-4">
+                                <img class="rounded-4" src="assets/img/post/16by9/big/03.jpg" alt="">
+                            </div>
+
+                            <div class="mt-4">
+                                <!-- Tag -->
+                                <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">Статьи</a>
+                                <!-- Title info -->
+                                <h1 class="mb-2 h2">Традиции британской королевской семьи</h1>
+                                <ul class="nav nav-stack gap-3 align-items-center">
+                                    <li class="nav-item"><i class="bi bi-calendar-date pe-1 me-2"></i>15 ноя, 2022</li>
+                                    <li class="nav-item"><i class="bi bi-clock pe-1 me-2"></i>5 мин</li>
+                                </ul>
+                            </div>
+
+                            <!-- description -->
+                            <div class="mt-4">
+                                <p class="mt-4">У исландцев есть одна особенность: они стараются максимально сохранить
+                                    свой язык. Когда необходимо новое слово, они не заимствуют его из другого языка, а
+                                    составляют сами из корней аналогичных слов в исландском языке. Эта языковая политика
+                                    – давняя традиция исландцев, активно поддерживаемая государством.</p>
+                                <h4 class="mt-4">Идейные соображения высшего порядка</h4>
+                                <!-- Row START -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <p>Постоянный количественный рост и сфера нашей активности в значительной
+                                            степени обуславливает создание позиций, занимаемых участниками в отношении
+                                            поставленных задач.</p>
+                                        <p>А также сложившаяся структура организации способствует подготовки и
+                                            реализации систем массового участия.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Старые слова могут получить новые значения, воскресают архаизмы.</li>
+                                            <li>Слова образуются из исконных корней.</li>
+                                            <li>Исландцы используют не только словосложение. Часть новых слов – простые
+                                                производные от слов другой формы.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Row END -->
+                                <!-- Blockquote START -->
+                                <figure class="bg-light rounded-4 p-3 p-sm-4 my-4">
+                                    <blockquote class="blockquote">
+                                        <p>Для многих слов известны их авторы, немало исландцев запомнились тем, что они
+                                            создали какое-то слово.</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0">
+                                        Альберт Шветцер
+                                    </figcaption>
+                                </figure>
+                                <!-- Blockquote END -->
+                                <p class="mb-0">Разумеется, интеграция в мировые связи требует иностранных языков –
+                                    исландцы их изучают, знают и употребляют. Но свой язык они сохраняют и
+                                    отграничивают.</p>
+                            </div>
+                        </div>
+
+                        <!-- Comments -->
+                        <div class="card">
+                            <div class="card-header pb-0 border-0">
+                                <h4>5 комментариев</h4>
+                            </div>
+                            <div class="card-body">
+                                <!-- Comments START -->
+                                <!-- Comment level 1-->
+                                <div class="my-4 d-flex">
+                                    <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/img/avatar/04.jpg"
+                                        alt="avatar">
+                                    <div>
+                                        <div class="mb-2 d-sm-flex">
+                                            <h6 class="m-0 me-2">Прокопий Мжеславович</h6>
+                                            <span class="me-3 small">12 дек, 2021 в 6:01</span>
+                                        </div>
+                                        <p>Равным образом новая модель организационной деятельности играет важную роль в
+                                            формировании модели развития!</p>
+                                        <a href="#" class="btn btn-light btn-sm">Ответить</a>
+                                    </div>
+                                </div>
+                                <!-- Comment level 2 -->
+                                <div class="mt-4 d-flex ps-2 ps-md-3">
+                                    <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/img/avatar/03.jpg"
+                                        alt="avatar">
+                                    <div>
+                                        <div class="mb-2 d-sm-flex">
+                                            <h6 class="m-0 me-2">Иван Франк</h6>
+                                            <span class="me-3 small">14 июн, 2022 в 12:35</span>
+                                        </div>
+                                        <p>Реализация намеченных плановых заданий в значительной степени обуславливает
+                                            создание системы обучения кадров.</p>
+                                        <a href="#" class="btn btn-light btn-sm">Ответить</a>
+                                    </div>
+                                </div>
+                                <!-- Comment children level 3 -->
+                                <div class="my-4 d-flex ps-3 ps-md-5">
+                                    <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/img/avatar/04.jpg"
+                                        alt="avatar">
+                                    <div>
+                                        <div class="mb-2 d-sm-flex">
+                                            <h6 class="m-0 me-2">Прокопий Мжеславович</h6>
+                                            <span class="me-3 small">01 янв, 2022 в 7:10</span>
+                                        </div>
+                                        <p>Спасибо! Ответ решен, уже не актуально</p>
+                                        <a href="#" class="btn btn-light btn-sm">Ответить</a>
+                                    </div>
+                                </div>
+                                <!-- Comment level 2 -->
+                                <div class="mt-4 d-flex ps-2 ps-md-3">
+                                    <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/img/avatar/03.jpg"
+                                        alt="avatar">
+                                    <div>
+                                        <div class="mb-2 d-sm-flex">
+                                            <h6 class="m-0 me-2">Иван Франк</h6>
+                                            <span class="me-3 small">14 июн, 2022 в 12:35</span>
+                                        </div>
+                                        <p>Реализация намеченных плановых заданий в значительной степени обуславливает
+                                            создание системы обучения кадров.</p>
+                                        <a href="#" class="btn btn-light btn-sm">Ответить</a>
+                                    </div>
+                                </div>
+                                <!-- Comment level 1-->
+                                <div class="my-4 d-flex">
+                                    <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/img/avatar/04.jpg"
+                                        alt="avatar">
+                                    <div>
+                                        <div class="mb-2 d-sm-flex">
+                                            <h6 class="m-0 me-2">Прокопий Мжеславович</h6>
+                                            <span class="me-3 small">12 дек, 2021 в 6:01</span>
+                                        </div>
+                                        <p>Равным образом новая модель организационной деятельности играет важную роль в
+                                            формировании модели развития!</p>
+                                        <a href="#" class="btn btn-light btn-sm">Ответить</a>
+                                    </div>
+                                </div>
+                                <!-- Comments END -->
+                                <hr class="my-4">
+                                <!-- Reply START -->
+                                <div>
+                                    <h4>Оставить комментарий</h4>
+                                    <form class="row g-3 mt-2">
+                                        <!-- Name -->
+                                        <div class="col-md-6">
+                                            <label class="form-label">Имя *</label>
+                                            <input type="text" class="form-control" aria-label="First name">
+                                        </div>
+                                        <!-- Email -->
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email *</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <!-- Your Comment -->
+                                        <div class="col-12">
+                                            <label class="form-label">Комментарий *</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <!-- custom checkbox -->
+                                        <div class="col-md-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Сохранить мои
+                                                    данные в этом браузере для следующего комментария.</label>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Reply END -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-mode py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <!-- Footer nav START -->
+                <ul class="nav justify-content-center justify-content-md-start lh-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Чат</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Достижения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Награды</a>
+                    </li>
+                </ul>
+                <!-- Footer nav START -->
+            </div>
+            <div class="col-md-6">
+                <!-- Copyright START -->
+                <p class="text-center text-md-end mb-0">Все права защищены / Smartpolyglot © 2022</p>
+                <!-- Copyright END -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- MODALS -->
+
+    <!-- SCRIPTS -->
+    <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="assets/vendor/dropzone/dist/dropzone.js"></script>
+<script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+<script src="assets/vendor/pswmeter/pswmeter.min.js"></script>
+<script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
+<script src="assets/js/front-page.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
