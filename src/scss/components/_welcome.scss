@@ -49,22 +49,32 @@
     height: auto;
 }
 
-.form-mascot-03 {
+.form-mascot-03,
+.form-mascot-08 {
     max-width: 100%;
-    height: auto;
     width: 240px;
+    height: auto;
 }
 
 .form-mascot-04 {
     max-width: 100%;
-    height: auto;
     width: 345px;
+    height: auto;
 }
 
 .form-mascot-05 {
     max-width: 100%;
-    height: auto;
     width: 220px;
+    height: auto;
+}
+
+.form-mascot-06,
+.form-mascot-07 {
+    position: absolute;
+    top: -48px;
+    right: -79px;
+    width: 180px;
+    height: auto;
 }
 
 @include media-breakpoint-up(lg) {
@@ -73,7 +83,8 @@
         top: -207px;
     }
 
-    .form-mascot-03 {
+    .form-mascot-03,
+    .form-mascot-08 {
         width: 380px;
     }
 
@@ -83,6 +94,13 @@
 
     .form-mascot-05 {
         width: 380px;
+    }
+
+    .form-mascot-06,
+    .form-mascot-07 {
+        top: -20px;
+        right: 0;
+        width: 180px;
     }
 }
 
@@ -130,7 +148,8 @@
         font-size: 18px;
     }
 
-    input[type="radio"] {
+    input[type="radio"],
+    input[type="checkbox"] {
         display: none;
     }
 
@@ -139,6 +158,16 @@
         height: 20px;
         border: 1px solid #656565;
         border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        transition: 0.3s ease;
+    }
+
+    .custom-checkbox {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #656565;
+        border-radius: 2px;
         display: inline-block;
         position: relative;
         transition: 0.3s ease;
@@ -153,13 +182,25 @@
     }
 }
 
-.welcome-check-option input[type="radio"]:checked+.custom-radio {
+.welcome-check-option input[type="checkbox"]:checked+.custom-checkbox,
+.welcome-check-option input[type="checkbox"]:checked+.custom-checkbox {
     background-color: #2A75F6;
     border-color: #2A75F6;
 }
 
 .welcome-check-option input[type="radio"]:checked+.custom-radio::after {
     content: url(../img/svg/radio-check.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.welcome-check-option input[type="checkbox"]:checked+.custom-checkbox::after {
+    content: url(../img/svg/checkbox.svg);
     position: absolute;
     top: 50%;
     left: 50%;
