@@ -4,7 +4,9 @@
 .section-welcome {
     position: relative;
     overflow: hidden;
-    
+    padding-top: 0;
+    padding-bottom: 0;
+
     .container {
         max-width: 480px;
     }
@@ -21,10 +23,114 @@
     background-color: #fff;
 }
 
+.welcome-quiz {
+    min-height: 600px;
+}
+
 .form-mascot-01 {
     position: absolute;
     top: -57px;
     right: -72px;
     width: 240px;
     height: auto;
+}
+
+.form-mascot-02 {
+    position: absolute;
+    top: -163px;
+    right: -31px;
+    width: 220px;
+    height: auto;
+}
+
+.form-mascot-03 {
+    max-width: 100%;
+    height: auto;
+    width: 240px;
+}
+
+.form-mascot-04 {
+    max-width: 100%;
+    height: auto;
+    width: 345px;
+}
+
+@include media-breakpoint-up(lg) {
+    .form-mascot-02 {
+        width: 280px;
+        top: -207px;
+    }
+
+    .form-mascot-03 {
+        width: 380px;
+    }
+
+    .form-mascot-04 {
+        width: 380px;
+    }
+}
+
+/* welcome-check-option */
+
+.welcome-check-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 6px 8px 0px rgba(17, 47, 98, 0.08);
+    transition: 0.3s ease;
+
+    .check-option-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        padding: 14px;
+        border-radius: 6px;
+        background: #fff;
+    }
+
+    .check-title {
+        font-size: 18px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .custom-radio {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #656565;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        transition: 0.3s ease;
+    }
+}
+
+.data-welcome-check-option {
+    border: 2px solid #fff;
+
+    &:has(input:checked) {
+        border-color: #2A75F6;
+    }
+}
+
+.welcome-check-option input[type="radio"]:checked+.custom-radio {
+    background-color: #2A75F6;
+    border-color: #2A75F6;
+}
+
+.welcome-check-option input[type="radio"]:checked+.custom-radio::after {
+    content: url(../img/svg/radio-check.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 20px;
+    height: 20px;
 }

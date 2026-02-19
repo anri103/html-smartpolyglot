@@ -22,7 +22,7 @@
     <!-- CSS for developers -->
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
-    <title>Регистрация</title>
+    <title>Укажи свой пол</title>
 
 </head>
 
@@ -142,69 +142,66 @@
     <!-- MAIN -->
     <main>
 
+        
         <!-- section-welcome -->
         <section class="section-welcome">
             <div class="container">
 
                 <!-- Extra space -->
-                <div class="h-60px d-none d-lg-block"></div>
+                <div class="h-20px"></div>
 
-                <!-- Form area -->
-                <div class="position-relative d-flex flex-column gap-2 max-w-360px mx-auto">
-                    <img class="form-mascot-01" src="assets/img/welcome/mascot-01.png" alt="">
-                    <div class="bg-blue-100 rounded p-4">
-                        <!-- Title -->
-                        <div class="mb-30px">
-                            <h1 class="h3 mb-2">Создать<br>аккаунт</h1>
+                <!-- welcome-quiz-area -->
+                <div class="welcome-quiz position-relative d-flex flex-column max-w-480px mx-auto">
+                    <!-- header -->
+                    <div class="welcome-quiz__header">
+                        <!-- progress bar -->
+                        <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 12px;">
+                            <div class="progress-bar bg-blue-500" style="width: 37.5%"></div>
                         </div>
-                        <!-- Form -->
-                        <form action="welcome-your-name.html">
-                            <!-- Email -->
-                            <div class="mb-2 input-group-lg">
-                                <input type="email" class="form-control min-h-50px fs-6" placeholder="Электронная почта">
-                                <div class="invalid-feedback">Вы ввели неправильный Email</div>
-                            </div>
-                            <!-- Password -->
-                            <div class="mb-2 input-group-lg">
-                                <input class="form-control min-h-50px fs-6" type="password" placeholder="Пароль">
-                                <div class="invalid-feedback">Вы ввели неправильный пароль</div>
-                            </div>
-                            <!-- Confirm password -->
-                            <div class="mb-2 input-group-lg">
-                                <input class="form-control min-h-50px fs-6" type="password" placeholder="Подтвердить пароль">
-                            </div>
-                            <!-- Buttons -->
-                            <div class="d-flex flex-column gap-2">
-                                <button type="submit" class="btn btn-lg fs-6 btn-blue min-h-50px w-100">Создать</button>
-                            </div>
-                            <!-- Or enter -->
-                            <div class="or-enter-area mt-2">
-                                <p class="text-center text-muted mb-2">или войти с помощью</p>
-                                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-                                    <a href="#" class="sign-up-media">
-                                        <img src="assets/img/svg/ya.svg" alt="yandex">
-                                    </a>
-                                    <a href="#" class="sign-up-media">
-                                        <img src="assets/img/svg/vk.svg" alt="vk">
-                                    </a>
-                                    <a href="#" class="sign-up-media">
-                                        <img src="assets/img/svg/google.svg" alt="google">
-                                    </a>
-                                    <a href="#" class="sign-up-media">
-                                        <img src="assets/img/svg/facebook.svg" alt="facebook">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Terms agree -->
-                            <div class="form-check text-start mt-4">
-                                <input type="checkbox" class="form-check-input" id="termsAgreeCheck">
-                                <label class="form-check-label fs-small" for="termsAgreeCheck">Нажимая согласиться, вы<br>принимаете <a href="#" target="_blank">условия использования</a></label>
-                            </div>
-                        </form>
+                        <!-- Extra space -->
+                        <div class="h-40px"></div>
                     </div>
-    
-                    <div class="text-center bg-blue-100 rounded p-4">
-                        <p class="mb-0">У вас уже есть аккаунт?<a href="welcome-sign-in.html"> Войти</a></p>
+                    <!-- body -->
+                    <div class="welcome-quiz__body position-relative flex-fill">
+                        <div>
+                            <!-- Title -->
+                            <div class="mb-30px">
+                                <h1 class="h3 mb-2">Укажи свой пол:</h1>
+                            </div>
+                            <!-- Form Age -->
+                            <form action="#">
+                                <div class="row g-2">
+                                    <div class="col-12 col-lg-12">
+                                        <label class="welcome-check-option data-welcome-check-option">
+                                            <span class="check-option-text">
+                                                <span class="check-title">Мужской</span>
+                                                <input type="radio" name="sex">
+                                                <span class="custom-radio"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-lg-12">
+                                        <label class="welcome-check-option data-welcome-check-option">
+                                            <span class="check-option-text">
+                                                <span class="check-title">Женский</span>
+                                                <input type="radio" name="sex">
+                                                <span class="custom-radio"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="form-mascot-04" src="assets/img/welcome/mascot-04.png" alt="">
+                        </div>
+                    </div>
+                    <!-- footer -->
+                    <div class="welcome-quiz__footer">
+                        <!-- Buttons -->
+                        <div class="d-flex flex-column gap-2">
+                            <a href="welcome-your-age.html" class="btn btn-lg fs-6 btn-blue min-h-50px w-100">Продолжить</a>
+                        </div>
                     </div>
                 </div>
 
