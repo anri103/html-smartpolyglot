@@ -142,55 +142,69 @@
     <!-- MAIN -->
     <main>
 
-        <!-- section-sign-in -->
-        <div class="container">
-            <div class="row justify-content-center align-items-center py-5">
-                <!-- Main content -->
-                <div class="col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+        <!-- section-welcome -->
+        <section class="section-welcome">
+            <div class="container">
 
-                    <!-- Sign in -->
-                    <div class="card card-body text-center p-4 p-sm-5">
+                <!-- Extra space -->
+                <div class="h-60px d-none d-lg-block"></div>
 
+                <!-- Form area -->
+                <div class="position-relative d-flex flex-column gap-2 max-w-360px mx-auto">
+                    <img class="form-mascot-01" src="assets/img/welcome/mascot-01.png" alt="">
+                    <div class="bg-blue-100 rounded p-4">
                         <!-- Title -->
-                        <h1 class="mb-2">Войти</h1>
-                        <p class="mb-0">У вас уже есть аккаунт?<a href="sign-up.html"> Создать</a></p>
-
+                        <div class="mb-30px">
+                            <h1 class="h3 mb-2">Войти<br>в&nbsp;аккаунт</h1>
+                        </div>
                         <!-- Form -->
-                        <form action="profile-my.html" class="mt-4">
+                        <form action="profile-my.html">
                             <!-- Email -->
-                            <div class="mb-3 input-group-lg">
-                                <input type="email" class="form-control is-invalid" placeholder="Электронная почта">
-                                <!-- Если не проходит валидацию, то добавляется блок invalid-feedback ниже, а самому полю добавляется класс is-invalid -->
-                                <div class="invalid-feedback">
-                                    Вы ввели неправильный Email
-                                </div>
+                            <div class="mb-2 input-group-lg">
+                                <input type="email" class="form-control min-h-50px fs-6" placeholder="Электронная почта">
+                                <div class="invalid-feedback">Вы ввели неправильный Email</div>
                             </div>
                             <!-- Password -->
-                            <div class="mb-3 input-group-lg">
-                                <input class="form-control is-invalid" type="password" placeholder="Пароль">
-                                <div class="invalid-feedback">
-                                    Вы ввели неправильный пароль
-                                </div>
+                            <div class="mb-2 input-group-lg">
+                                <input class="form-control min-h-50px fs-6" type="password" placeholder="Пароль">
+                                <div class="invalid-feedback">Вы ввели неправильный пароль</div>
                             </div>
-                            <!-- Remember me -->
-                            <div class="mb-3 d-flex flex-wrap justify-content-between">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
-                                    <label class="form-check-label" for="rememberCheck">Запомнить меня</label>
-                                </div>
-                                <a href="sign-forgot-password.html">Забыли пароль?</a>
+                            <!-- Buttons -->
+                            <div class="d-flex flex-column gap-2">
+                                <button type="submit" class="btn btn-lg fs-6 btn-blue min-h-50px w-100">Войти в аккаунт</button>
+                                <a href="sign-forgot-password.html" class="btn btn-lg fs-6 btn-gray-blue min-h-50px w-100">Восстановить пароль</a>
                             </div>
-                            <!-- Button -->
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-lg btn-primary">Войти</button>
+                            <!-- Or enter -->
+                            <div class="or-enter-area mt-2">
+                                <p class="text-center text-muted mb-2">или войти с помощью</p>
+                                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                                    <a href="#" class="sign-up-media">
+                                        <img src="assets/img/svg/ya.svg" alt="yandex">
+                                    </a>
+                                    <a href="#" class="sign-up-media">
+                                        <img src="assets/img/svg/vk.svg" alt="vk">
+                                    </a>
+                                    <a href="#" class="sign-up-media">
+                                        <img src="assets/img/svg/google.svg" alt="google">
+                                    </a>
+                                    <a href="#" class="sign-up-media">
+                                        <img src="assets/img/svg/facebook.svg" alt="facebook">
+                                    </a>
+                                </div>
                             </div>
                         </form>
-
                     </div>
-
+    
+                    <div class="text-center bg-blue-100 rounded p-4">
+                        <p class="mb-0">У вас уже есть аккаунт?<a href="sign-up.html"> Создать</a></p>
+                    </div>
                 </div>
+
+                <!-- Extra space -->
+                <div class="h-60px d-none d-lg-block"></div>
+                
             </div>
-        </div>
+        </section>
 
     </main>
 

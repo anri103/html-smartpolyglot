@@ -1,6 +1,14 @@
 /*------------------------------------------------------------------
 [ general ]*/
 
+// bg-colors
+.bg-blue-100 {
+    background-color: #D4E3FD !important;
+}
+
+// margins
+.mb-30px { margin-bottom: 30px !important; }
+
 // margin negative
 .m-n1 { margin: -0.25rem !important; }
 .m-n2 { margin: -0.5rem !important; }
@@ -219,6 +227,9 @@
 .w-300px { width: 300px !important; }
 .w-400px { width: 400px !important; }
 
+// max-width
+.max-w-360px { max-width: 360px !important; }
+
 // height
 .h-20px { height: 20px !important; }
 .h-30px { height: 30px !important; }
@@ -233,6 +244,9 @@
 .h-200px { height: 200px !important; }
 .h-300px { height: 300px !important; }
 .h-400px { height: 400px !important; }
+
+// min-height
+.min-h-50px { min-height: 50px !important; }
 
 // fill
 .fill-primary { fill: #0f6fec !important; }

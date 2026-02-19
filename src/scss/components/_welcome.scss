@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------
+[ welcome ]*/
+
+.section-welcome {
+    position: relative;
+    overflow: hidden;
+    
+    .container {
+        max-width: 480px;
+    }
+}
+
+.sign-up-media {
+    width: 60px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.form-mascot-01 {
+    position: absolute;
+    top: -57px;
+    right: -72px;
+    width: 240px;
+    height: auto;
+}
