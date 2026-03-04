@@ -151,10 +151,10 @@
                     <!-- body -->
                     <div class="position-relative flex-fill">
                         <!-- Content -->
-                        <div class="position-relative d-flex flex-column gap-4 bg-white rounded-3 p-4">
+                        <div class="position-relative d-flex flex-column gap-5 bg-white rounded-3 p-4">
 
                             <!-- Timer -->
-                            <div class="d-flex align-items-center justify-content-between rounded-3 bg-blue-100 py-3 px-3 mb-4">
+                            <div class="d-flex align-items-center justify-content-between rounded-3 bg-blue-100 py-3 px-3">
                                 <div class="d-flex w-max flex-column gap-2">
                                     <p class="fs-small fw-medium mb-0">Скидка 60% забронирована для:</p>
                                     <div class="d-flex align-items-center gap-1">
@@ -167,17 +167,17 @@
                                 <button type="button" class="btn btn-sm fs-14px btn-blue">Продолжить</button>
                             </div>
 
-                            <!-- Wrapper -->
+                            <!-- Prices wrapper -->
                             <div class="position-relative d-flex flex-column align-items-center gap-4">
 
-                                <!-- heading -->
+                                <!-- Heading -->
                                 <div class="d-flex flex-column text-center w-260px mx-auto">
                                     <p class="h4 fw-bold text-blue-500">Смарт Полиглот</p>
                                     <p class="fs-3 fw-bold">Откройте полный доступ</p>
                                     <p class="mb-0">Учитесь в удобное время и в любом месте — всё для вашего комфорта.</p>
                                 </div>
     
-                                <!-- features -->
+                                <!-- Features 1 -->
                                 <div class="d-flex flex-column gap-2">
                                     <div class="d-flex align-items-center gap-3 fw-bold">
                                         <span>👥</span>
@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
 
-                                <!-- prices -->
+                                <!-- Prices -->
                                 <div class="d-flex flex-column w-100">
                                     <form action="#">
                                         <div class="d-flex flex-column align-items-center w-100 gap-2 mb-4">
@@ -262,6 +262,7 @@
                                     </form>
                                 </div>
 
+                                <!-- Payment info -->
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="d-flex align-items-center justify-content-center gap-2 rounded-3 border border-success bg-success bg-opacity-10 py-1 px-2 fs-x-small fw-bold text-success">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none">
@@ -275,17 +276,19 @@
                                     <img class="img-fluid" src="assets/img/payment/payment_methods.png" alt="payment-methods">
                                 </div>
 
+                                <!-- Payment disclaimer -->
                                 <div class="d-flex w-100 flex-column align-items-start rounded-3 border bg-light py-3 px-4 text-center">
                                     <p class="fs-small text-muted mb-0">Скидка на первую оплату уже применена автоматически. После окончания выбранного периода подписка продлится по цене $24.99.</p>
                                 </div>
 
+                                <!-- User agreement -->
                                 <p class="text-center fs-x-small text-muted">
                                     Продолжая, вы принимаете наши <a href="#" rel="noopener noreferrer" target="_blank">Пользовательское соглашение</a>, <a href="#" rel="noopener noreferrer" target="_blank">Политика конфиденциальности и файлов cookie</a> и <a href="#" rel="noopener noreferrer" target="_blank">Правила возврата и отмены</a>.
                                 </p>
 
                             </div>
 
-                            <!-- Text -->
+                            <!-- Features 2 -->
                             <div class="d-flex w-100 flex-column align-items-center rounded-3 border border-warning bg-warning bg-opacity-10 py-4 px-4">
                                 <div class="d-flex flex-column text-center">
                                     <p class="fs-4 fw-bold">Что ты получаешь с<br><span class="text-blue-500">Смарт Полиглот</span></p>
@@ -547,7 +550,129 @@
                                 </div>
                             </div>
 
+                            <!-- Prices wrapper (for dumbs users) -->
+                            <!-- ================================================= -->
+                            <!-- DEVELOPER look more closely at the input radio ID -->
+                            <!-- ================================================= -->
+                            <div class="position-relative d-flex flex-column align-items-center gap-4">
 
+                                <!-- Heading -->
+                                <div class="d-flex flex-column text-center w-260px mx-auto">
+                                    <p class="h4 fw-bold text-blue-500">Смарт Полиглот</p>
+                                    <p class="fs-3 fw-bold">Откройте полный доступ</p>
+                                    <p class="mb-0">Учитесь в удобное время и в любом месте — всё для вашего комфорта.</p>
+                                </div>
+    
+                                <!-- Features 1 -->
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-3 fw-bold">
+                                        <span>👥</span>
+                                        <p class="mb-0">Безлимитная практика с заданиями</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 fw-bold">
+                                        <span>📝</span>
+                                        <p class="mb-0">Индивидуальный учебный план</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 fw-bold">
+                                        <span>💯</span>
+                                        <p class="mb-0">Мгновенная обратная связь от ИИ</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 fw-bold">
+                                        <span>⛳</span>
+                                        <p class="mb-0">Контроль и отслеживание прогресса</p>
+                                    </div>
+                                </div>
+
+                                <!-- Prices -->
+                                <div class="d-flex flex-column w-100">
+                                    <form action="#">
+                                        <div class="d-flex flex-column align-items-center w-100 gap-2 mb-4">
+                                            <!-- item -->
+                                            <input class="item-radio-price d-none visually-hidden" type="radio" name="radioPrice" id="radioPrice3" checked>
+                                            <label class="item-label-price" for="radioPrice3">
+                                                <div class="w-100 bg-blue-500 py-1 text-center fs-small fw-bold text-uppercase text-white">Хит продаж</div>
+                                                <div class="d-flex justify-content-between rounded-3 px-4 py-3">
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <p class="fw-bold lh-1 mb-0">1 Неделя</p>
+                                                        <p class="w-fit rounded-3 fs-x-small fw-bold lh-1 bg-blue-500 text-white py-2 px-2 mb-0">ВЫГОДА 60%</p>
+                                                        <p class="d-flex gap-2 fs-small fw-bold text-muted mb-0">
+                                                            <span class="text-decoration-line-through decoration-danger">$24.99</span>
+                                                            <span>$10.00</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex gap-2 fw-bold">
+                                                        <div class="text-muted text-decoration-line-through decoration-danger">$3.57</div>
+                                                        <div class="d-flex align-items-start gap-1">
+                                                            <div class="d-flex align-items-start fw-bold">
+                                                                <span>$</span>
+                                                                <span style="font-size: 56px; line-height: 64px;">1</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column">
+                                                                <span class="fw-bold">39</span>
+                                                                <span class="fs-x-small fw-medium">в день</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <!-- item -->
+                                            <input class="item-radio-price d-none visually-hidden" type="radio" name="radioPrice" id="radioPrice4">
+                                            <label class="item-label-price" for="radioPrice4">
+                                                <div class="d-flex justify-content-between rounded-3 px-4 py-3">
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <p class="fw-bold lh-1 mb-0">1 Год</p>
+                                                        <p class="w-fit rounded-3 fs-x-small fw-bold lh-1 bg-blue-500 text-white py-2 px-2 mb-0">ВЫГОДА 60%</p>
+                                                        <p class="d-flex gap-2 fs-small fw-bold text-muted mb-0">
+                                                            <span class="text-decoration-line-through decoration-danger">$124.99</span>
+                                                            <span>$50.00</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex gap-2 fw-bold">
+                                                        <div class="text-muted text-decoration-line-through decoration-danger">$0.34</div>
+                                                        <div class="d-flex align-items-start gap-1">
+                                                            <div class="d-flex align-items-start fw-bold">
+                                                                <span>$</span>
+                                                                <span style="font-size: 56px; line-height: 64px;">0</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column">
+                                                                <span class="fw-bold">09</span>
+                                                                <span class="fs-x-small fw-medium">в день</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <!-- button -->
+                                        <button type="submit" class="btn btn-lg fs-6 btn-blue min-h-50px w-100">Начать обучение</button>
+                                    </form>
+                                </div>
+
+                                <!-- Payment info -->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center gap-2 rounded-3 border border-success bg-success bg-opacity-10 py-1 px-2 fs-x-small fw-bold text-success">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none">
+                                            <path fill="#4AA181" d="M.895 4.264c0-.62.37-1.186.939-1.437L7.36.386c.403-.181.869-.181 1.28 0l5.526 2.44c.568.252.94.817.94 1.438v3.69a9.9 9.9 0 0 1-1.25 4.773c-2.435 4.417-8.488 4.417-11.713 0A9.9 9.9 0 0 1 .895 7.954z"></path>
+                                            <g clip-path="url(#clip0_3815_24493)">
+                                                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.184" d="M10.632 6.172 7.014 9.79 5.369 8.146"></path>
+                                            </g>
+                                        </svg>
+                                        Безопасная и надёжная оплата
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/payment/payment_methods.png" alt="payment-methods">
+                                </div>
+
+                                <!-- Payment disclaimer -->
+                                <div class="d-flex w-100 flex-column align-items-start rounded-3 border bg-light py-3 px-4 text-center">
+                                    <p class="fs-small text-muted mb-0">Скидка на первую оплату уже применена автоматически. После окончания выбранного периода подписка продлится по цене $24.99.</p>
+                                </div>
+
+                                <!-- User agreement -->
+                                <p class="text-center fs-x-small text-muted">
+                                    Продолжая, вы принимаете наши <a href="#" rel="noopener noreferrer" target="_blank">Пользовательское соглашение</a>, <a href="#" rel="noopener noreferrer" target="_blank">Политика конфиденциальности и файлов cookie</a> и <a href="#" rel="noopener noreferrer" target="_blank">Правила возврата и отмены</a>.
+                                </p>
+
+                            </div>
 
                         </div>
                     </div>
