@@ -9,6 +9,8 @@
 .mb-30px { margin-bottom: 30px !important; }
 
 // width
+.w-max { width: max-content; }
+.w-fit { width: fit-content; }
 .w-20px { width: 20px !important; }
 .w-30px { width: 30px !important; }
 .w-40px { width: 40px !important; }
@@ -20,6 +22,7 @@
 .w-100px { width: 100px !important;}
 .w-150px { width: 150px !important;}
 .w-200px { width: 200px !important;}
+.w-260px { width: 260px !important;}
 .w-300px { width: 300px !important; }
 .w-400px { width: 400px !important; }
 
@@ -138,6 +141,8 @@
         border-right: 0;
     }
 }
+.border-blue-100 { --bs-border-opacity: 1;border-color:rgba(212, 227, 253, var(--bs-border-opacity)) !important }
+.border-blue-500 { --bs-border-opacity: 1;border-color:rgba(42, 117, 246, var(--bs-border-opacity)) !important }
 
 // margin negative
 .m-n1 { margin: -0.25rem !important; }

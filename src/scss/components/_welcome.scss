@@ -242,3 +242,28 @@
     padding: 10px;
     padding-bottom: 62px;
 }
+
+/* item-label-price */
+
+.item-label-price {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius-lg);
+    background-color: transparent;
+    filter: opacity(0.5);
+    transition: 0.3s ease;
+
+    &:hover {
+        filter: opacity(0.75);
+    }
+}
+
+.item-radio-price:checked + .item-label-price {
+    border-color: #2a75f6;
+    background-color: #D4E3FD;
+    filter: opacity(1);
+}
